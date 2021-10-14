@@ -1,0 +1,12 @@
+23:21:46.669 [main] INFO  dd.Demo - Starting Demo on 14WLMH2 with PID 3392 (D:\localtest\myPatterns\ss\target\classes started by liudengfeng in D:\localtest\myPatterns\ss)
+23:21:46.669 [main] DEBUG dd.Demo - Running with Spring Boot v1.5.10.RELEASE, Spring v4.3.14.RELEASE
+23:21:46.669 [main] INFO  dd.Demo - No active profile set, falling back to default profiles: default
+23:21:46.861 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+23:21:47.544 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+23:21:47.545 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.27
+23:21:47.606 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+23:21:48.268 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+23:21:48.274 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+23:21:48.284 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+23:21:48.301 [main] INFO  dd.Demo - Started Demo in 2.129 seconds (JVM running for 3.253)
+23:21:48.301 [main] INFO  dd.Demo - hello

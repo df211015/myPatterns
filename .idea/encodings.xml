@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/adapterpattern/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/algorithmdemo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bridgepattern/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/builderpattern/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/chainpattern/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/commandpattern/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/compositepattern/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/decoratorpattern/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/flyweightpattern/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hutoolmytest/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/interpreterpattern/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/iteratorpattern/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mediatorpattern/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mementopattern/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/observepattern/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/prototypepattern/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/proxypattern/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/redisdemo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/singletonpattern/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/statepattern/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/structdata/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/visitorpattern/src/main/java" charset="UTF-8" />
+  </component>
+</project>

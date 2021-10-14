@@ -1,0 +1,27 @@
+server:
+  port: 8099
+  servlet:
+    context-path: /demo
+
+retrofit:
+  # 连接池配置
+  pool:
+    # test1连接池配置
+    test1:
+      # 最大空闲连接数
+      max-idle-connections: 3
+      # 连接保活时间(秒)
+      keep-alive-second: 100
+  retry:
+    # 是否启用全局重试
+    enable-global-retry: true
+    # 全局重试间隔时间
+    global-interval-ms: 20
+    # 全局最大重试次数
+    global-max-retries: 10
+    # 全局重试规则
+    global-retry-rules:
+      - response_status_not_2xx
+    # 重试拦截器
+    retry-interceptor: com.github.lianjiatech.retrofit.spring.boot.retry.DefaultRetryInterceptor
+

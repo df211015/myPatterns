@@ -1,0 +1,11 @@
+server:
+  port: 8090
+  servlet:
+    context-path: /datainit
+
+logging:
+  level:
+    com.example.permissiondata: trace
+  file:
+    name: mylog
+    max-size: 100000000

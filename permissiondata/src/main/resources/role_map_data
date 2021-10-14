@@ -1,0 +1,17 @@
+二手车普通:r_admin
+二手车高级:r_store_manager,r_net_popularize
+二手车商机普通:r_sale_specialist
+二手车商机高级:r_sale_manager
+二手车数据中心:r_net_popularize,r_sale_manager,r_sale_specialist
+二手车平台管理默认:r_admin
+二手车平台普通默认:r_admin
+呼叫中心:r_sale_manager,r_sale_specialist,r_net_popularize
+主账号:r_admin
+
+# --淘车角色列表--
+# r_admin	           管理员
+# r_store_manager      库管
+# r_net_popularize     网推
+# r_sale_manager       销售经理
+# r_sale_specialist    销售专员
+# r_nassessor	       收车经理

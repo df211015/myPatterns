@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="310bc2ca-dabc-46e3-90ff-13390116c990" name="Default" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="190" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\soft\dev\Java\maven\local\repotmp" />
+        <option name="userSettingsFile" value="C:\Users\liudengfeng\m3\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1jlhUSKgiCuvhXIiW27RhROsQk9" />
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="D:/workspace/platform/c2b-vehicle-audit-promotion" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.structdata.service" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\localtest\myPatterns\decoratorpattern\src\main\java\com\example\service" />
+      <recent name="D:\localtest\myPatterns\structdata\src\main\resources" />
+      <recent name="D:\localtest\myPatterns\flyweightpattern\src\main\java\com\example\flyweightpattern\service" />
+      <recent name="D:\localtest\myPatterns\redisdemo\src\main\java\com\taoche\example\redisdemo\config\config01" />
+      <recent name="D:\localtest\myPatterns\redisdemo\src\main\java\com\taoche\example\redisdemo\config" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.HutoolmytestApplication">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration name="DecoratorpatternApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.DecoratorpatternApplication" />
+      <module name="decoratorpattern" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HutoolmytestApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.hutoolmytest.HutoolmytestApplication" />
+      <module name="hutoolmytest" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.hutoolmytest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MediatorpatternApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.MediatorpatternApplication" />
+      <module name="mediatorpattern" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StatepatternApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.statepattern.StatepatternApplication" />
+      <module name="statepattern" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.statepattern.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StructdataApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.structdata.StructdataApplication" />
+      <module name="structdata" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.structdata.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AdapterpatternApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="adapterpattern" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.adapterpattern.AdapterpatternApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AlgorithmdemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="algorithmdemo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.algorithmdemo.AlgorithmdemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BridgepatternApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="bridgepattern" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.bridgepattern.BridgepatternApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BuilderpatternApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="builderpattern" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.builderpattern.BuilderpatternApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ChainpatternApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="chainpattern" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.chainpattern.ChainpatternApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CommandpatternApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="commandpattern" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.commandpattern.commandpattern.CommandpatternApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CompositepatternApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="compositepattern" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.compositepattern.CompositepatternApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DecoratorpatternApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="decoratorpattern" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.DecoratorpatternApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="demo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.iteratorpattern.demo.DemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FlyweightpatternApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="flyweightpattern" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.flyweightpattern.FlyweightpatternApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HutooldemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="hutooldemo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.hutooldemo.HutooldemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HutoolmytestApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="hutoolmytest" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.hutoolmytest.HutoolmytestApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InterpreterApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="interpreter" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.interpreter.InterpreterApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MediatorpatternApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="mediatorpattern" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.MediatorpatternApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MementopatternApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="mementopattern" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.mementopattern.MementopatternApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ObservepatternApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="observepattern" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.observepattern.ObservepatternApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PrototypepatternApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="prototypepattern" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.prototypepattern.PrototypepatternApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProxypatternApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="proxypattern" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.proxypattern.ProxypatternApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RedisdemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="redisdemo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.taoche.example.redisdemo.RedisdemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SingletonpatternApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="singletonpattern" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.singletonpattern.SingletonpatternApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StatepatternApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="statepattern" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.statepattern.StatepatternApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StructdataApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="structdata" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.structdata.StructdataApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VisitorpatternApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="visitorpattern" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.visitorpattern.VisitorpatternApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.HutoolmytestApplication" />
+        <item itemvalue="Application.StructdataApplication" />
+        <item itemvalue="Application.DecoratorpatternApplication" />
+        <item itemvalue="Application.StatepatternApplication" />
+        <item itemvalue="Application.MediatorpatternApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="310bc2ca-dabc-46e3-90ff-13390116c990" name="Default" comment="" />
+      <created>1595830004068</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1595830004068</updated>
+      <workItem from="1595830005768" duration="78000" />
+      <workItem from="1604384602474" duration="6019000" />
+      <workItem from="1604398337609" duration="98000" />
+      <workItem from="1604398476489" duration="5100000" />
+      <workItem from="1604475639491" duration="1611000" />
+      <workItem from="1604481561543" duration="2910000" />
+      <workItem from="1604561059316" duration="271000" />
+      <workItem from="1604561743335" duration="6944000" />
+      <workItem from="1604643202662" duration="817000" />
+      <workItem from="1604890522217" duration="5947000" />
+      <workItem from="1605236041231" duration="5838000" />
+      <workItem from="1605602147269" duration="25323000" />
+      <workItem from="1606570740518" duration="205000" />
+      <workItem from="1606571091203" duration="1383000" />
+      <workItem from="1606655567984" duration="1476000" />
+      <workItem from="1607062927620" duration="1633000" />
+      <workItem from="1608167756963" duration="3496000" />
+      <workItem from="1608284019708" duration="1357000" />
+      <workItem from="1608389530704" duration="324000" />
+      <workItem from="1608513848475" duration="36000" />
+      <workItem from="1608514198800" duration="5557000" />
+      <workItem from="1608529196916" duration="9534000" />
+      <workItem from="1608598746940" duration="718000" />
+      <workItem from="1608685996975" duration="573000" />
+      <workItem from="1608780317664" duration="4086000" />
+      <workItem from="1608795583345" duration="3111000" />
+      <workItem from="1608865965114" duration="2550000" />
+      <workItem from="1609122447760" duration="687000" />
+      <workItem from="1609728067126" duration="608000" />
+      <workItem from="1610172717133" duration="4653000" />
+      <workItem from="1610335335162" duration="4981000" />
+      <workItem from="1610436427610" duration="3152000" />
+      <workItem from="1610620944829" duration="1357000" />
+      <workItem from="1610677910147" duration="16508000" />
+      <workItem from="1610933800941" duration="5864000" />
+      <workItem from="1611020710656" duration="1305000" />
+      <workItem from="1611110122327" duration="6211000" />
+      <workItem from="1611200419569" duration="5497000" />
+      <workItem from="1611625937933" duration="620000" />
+      <workItem from="1611646959343" duration="7308000" />
+      <workItem from="1612751640247" duration="2040000" />
+      <workItem from="1612756023675" duration="90000" />
+      <workItem from="1612756590708" duration="5212000" />
+      <workItem from="1614070884310" duration="444000" />
+      <workItem from="1614071350907" duration="3625000" />
+      <workItem from="1614128995400" duration="1180000" />
+      <workItem from="1614130639515" duration="682000" />
+      <workItem from="1614236518101" duration="1640000" />
+      <workItem from="1614247058574" duration="893000" />
+      <workItem from="1616133802245" duration="4127000" />
+      <workItem from="1616375410690" duration="774000" />
+      <workItem from="1616380810672" duration="4382000" />
+      <workItem from="1616466672738" duration="15421000" />
+      <workItem from="1616567306985" duration="1867000" />
+      <workItem from="1616727530735" duration="1630000" />
+      <workItem from="1616729179721" duration="40000" />
+      <workItem from="1617178044359" duration="9181000" />
+      <workItem from="1617760234080" duration="2092000" />
+      <workItem from="1619662050794" duration="640000" />
+      <workItem from="1619767545369" duration="4789000" />
+      <workItem from="1620439616949" duration="5037000" />
+      <workItem from="1620465322997" duration="829000" />
+      <workItem from="1620611812903" duration="3241000" />
+      <workItem from="1623138886364" duration="6655000" />
+      <workItem from="1623738214432" duration="5134000" />
+      <workItem from="1623810313138" duration="973000" />
+      <workItem from="1623827433324" duration="621000" />
+      <workItem from="1623835092501" duration="4997000" />
+      <workItem from="1624356270566" duration="3551000" />
+      <workItem from="1624932601328" duration="3169000" />
+      <workItem from="1625099959423" duration="1011000" />
+      <workItem from="1625814776043" duration="3325000" />
+      <workItem from="1626079137036" duration="4388000" />
+      <workItem from="1626141428879" duration="1349000" />
+      <workItem from="1627871861414" duration="636000" />
+      <workItem from="1627888513083" duration="1537000" />
+      <workItem from="1627892896957" duration="1189000" />
+      <workItem from="1627962434503" duration="3587000" />
+      <workItem from="1628048279732" duration="11072000" />
+      <workItem from="1628218314410" duration="4769000" />
+      <workItem from="1628846188356" duration="1760000" />
+      <workItem from="1629196241608" duration="891000" />
+      <workItem from="1629359190849" duration="1056000" />
+      <workItem from="1629856348703" duration="990000" />
+      <workItem from="1629966315740" duration="235000" />
+      <workItem from="1630568560500" duration="2234000" />
+      <workItem from="1630647121496" duration="1716000" />
+      <workItem from="1630891361929" duration="185000" />
+      <workItem from="1631152967368" duration="4549000" />
+      <workItem from="1631971951158" duration="1966000" />
+      <workItem from="1632733037001" duration="8703000" />
+      <workItem from="1632821162082" duration="699000" />
+      <workItem from="1633921079575" duration="4928000" />
+      <workItem from="1633936043359" duration="490000" />
+      <workItem from="1633936561330" duration="1678000" />
+      <workItem from="1634001210473" duration="11164000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.cmd" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="488" y="64" key="#com.intellij.ide.util.MemberChooser" timestamp="1634009713968">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="488" y="64" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1634009713968" />
+    <state width="440" height="466" key="DebuggerActiveHint" timestamp="1631972675629">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="440" height="466" key="DebuggerActiveHint/0.0.1366.728@0.0.1366.728" timestamp="1631972675629" />
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1634090946258">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1634090946258" />
+    <state width="1323" height="329" key="GridCell.Tab.0.bottom" timestamp="1634115538997">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="329" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1634115538997" />
+    <state width="1323" height="329" key="GridCell.Tab.0.center" timestamp="1634115538997">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="329" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1634115538997" />
+    <state width="1323" height="329" key="GridCell.Tab.0.left" timestamp="1634115538997">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="329" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1634115538997" />
+    <state width="1323" height="329" key="GridCell.Tab.0.right" timestamp="1634115538997">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="329" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1634115538997" />
+    <state width="1323" height="266" key="GridCell.Tab.1.bottom" timestamp="1634115538994">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="266" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1634115538994" />
+    <state width="1323" height="266" key="GridCell.Tab.1.center" timestamp="1634115538994">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="266" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1634115538994" />
+    <state width="1323" height="266" key="GridCell.Tab.1.left" timestamp="1634115538994">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="266" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1634115538994" />
+    <state width="1323" height="266" key="GridCell.Tab.1.right" timestamp="1634115538994">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="266" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1634115538994" />
+    <state width="1323" height="407" key="GridCell.Tab.2.bottom" timestamp="1634009045591">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="407" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1634009045591" />
+    <state width="1323" height="407" key="GridCell.Tab.2.center" timestamp="1634009045591">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="407" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1634009045591" />
+    <state width="1323" height="407" key="GridCell.Tab.2.left" timestamp="1634009045591">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="407" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1634009045591" />
+    <state width="1323" height="407" key="GridCell.Tab.2.right" timestamp="1634009045591">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="407" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1634009045591" />
+    <state x="95" y="57" key="new project wizard" timestamp="1633936331804">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="95" y="57" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1633936331804" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/statepattern/src/main/java/com/example/statepattern/StatepatternApplication.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/statepattern/src/main/java/com/example/statepattern/StatepatternApplication.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/myPatterns$PrototypepatternApplication.ic" NAME="PrototypepatternApplication Coverage Results" MODIFIED="1616490856588" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.example.prototypepattern.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

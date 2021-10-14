@@ -1,0 +1,15 @@
+server:
+  port: 8089
+
+spring:
+  reportsetting:
+    report-interval: 2000
+    report-repeat: 3
+    report-prefixtemplate: 现在时间是%s点%s分,
+    report-subminute: 3
+
+logging:
+  level:
+    com.example.voicereport: trace
+  file:
+    mylog

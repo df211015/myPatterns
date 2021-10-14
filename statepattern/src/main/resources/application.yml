@@ -1,0 +1,5 @@
+spring:
+  thread:
+    core-pool-size: 2
+    maximum-pool-size: 5
+    keep-alive-time: 0

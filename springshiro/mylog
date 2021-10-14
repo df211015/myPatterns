@@ -1,0 +1,61 @@
+2020-06-03 17:10:28.247  INFO 9224 --- [main] c.e.springshiro.SpringshiroApplication   : Starting SpringshiroApplication on 14WLMH2 with PID 9224 (D:\localtest\myPatterns\springshiro\target\classes started by liudengfeng in D:\localtest\myPatterns\springshiro)
+2020-06-03 17:10:28.255 DEBUG 9224 --- [main] c.e.springshiro.SpringshiroApplication   : Running with Spring Boot v2.3.0.RELEASE, Spring v5.2.6.RELEASE
+2020-06-03 17:10:28.255  INFO 9224 --- [main] c.e.springshiro.SpringshiroApplication   : No active profile set, falling back to default profiles: default
+2020-06-03 17:10:29.372  INFO 9224 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2020-06-03 17:10:29.379  INFO 9224 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-03 17:10:29.380  INFO 9224 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-06-03 17:10:29.383  INFO 9224 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.14] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2020-06-03 17:10:29.383  INFO 9224 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2020-06-03 17:10:29.383  INFO 9224 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-06-03 17:10:29.383  INFO 9224 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-06-03 17:10:30.429  INFO 9224 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2020-06-03 17:10:30.502  INFO 9224 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/shiro]  : Initializing Spring embedded WebApplicationContext
+2020-06-03 17:10:30.503  INFO 9224 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2163 ms
+2020-06-03 17:10:30.590  INFO 9224 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-06-03 17:10:30.692  INFO 9224 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-06-03 17:10:30.972  INFO 9224 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-03 17:10:31.215  INFO 9224 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path '/shiro'
+2020-06-03 17:10:31.223  INFO 9224 --- [main] c.e.springshiro.SpringshiroApplication   : Started SpringshiroApplication in 3.573 seconds (JVM running for 4.38)
+2020-06-03 17:10:31.225  INFO 9224 --- [main] c.e.springshiro.SpringshiroApplication   : SpringshiroApplication启动成功
+2020-06-03 17:10:48.984  INFO 9224 --- [http-nio-8082-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/shiro]  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-03 17:10:48.984  INFO 9224 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-06-03 17:10:48.989  INFO 9224 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2020-06-03 17:10:49.009  INFO 9224 --- [http-nio-8082-exec-2] c.e.s.contoller.TestController           : test请求
+2020-06-03 17:11:02.355  INFO 6472 --- [main] c.e.springshiro.SpringshiroApplication   : Starting SpringshiroApplication on 14WLMH2 with PID 6472 (D:\localtest\myPatterns\springshiro\target\classes started by liudengfeng in D:\localtest\myPatterns\springshiro)
+2020-06-03 17:11:02.359 DEBUG 6472 --- [main] c.e.springshiro.SpringshiroApplication   : Running with Spring Boot v2.3.0.RELEASE, Spring v5.2.6.RELEASE
+2020-06-03 17:11:02.360  INFO 6472 --- [main] c.e.springshiro.SpringshiroApplication   : No active profile set, falling back to default profiles: default
+2020-06-03 17:11:03.513  INFO 6472 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2020-06-03 17:11:03.521  INFO 6472 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-03 17:11:03.521  INFO 6472 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-06-03 17:11:03.523  INFO 6472 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.14] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2020-06-03 17:11:03.523  INFO 6472 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2020-06-03 17:11:03.523  INFO 6472 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-06-03 17:11:03.523  INFO 6472 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-06-03 17:11:04.577  INFO 6472 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2020-06-03 17:11:04.669  INFO 6472 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/shiro]  : Initializing Spring embedded WebApplicationContext
+2020-06-03 17:11:04.669  INFO 6472 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2230 ms
+2020-06-03 17:11:04.766  INFO 6472 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-06-03 17:11:04.871  INFO 6472 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-06-03 17:11:05.160  INFO 6472 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-03 17:11:05.355  INFO 6472 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path '/shiro'
+2020-06-03 17:11:05.365  INFO 6472 --- [main] c.e.springshiro.SpringshiroApplication   : Started SpringshiroApplication in 3.681 seconds (JVM running for 4.499)
+2020-06-03 17:11:05.366  INFO 6472 --- [main] c.e.springshiro.SpringshiroApplication   : SpringshiroApplication启动成功
+2020-06-03 17:21:56.105  INFO 13076 --- [main] c.e.springshiro.SpringshiroApplication   : Starting SpringshiroApplication on 14WLMH2 with PID 13076 (D:\localtest\myPatterns\springshiro\target\classes started by liudengfeng in D:\localtest\myPatterns\springshiro)
+2020-06-03 17:21:56.108 DEBUG 13076 --- [main] c.e.springshiro.SpringshiroApplication   : Running with Spring Boot v2.3.0.RELEASE, Spring v5.2.6.RELEASE
+2020-06-03 17:21:56.108  INFO 13076 --- [main] c.e.springshiro.SpringshiroApplication   : No active profile set, falling back to default profiles: default
+2020-06-03 17:21:57.087  INFO 13076 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2020-06-03 17:21:57.095  INFO 13076 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-03 17:21:57.095  INFO 13076 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-06-03 17:21:57.096  INFO 13076 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.14] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2020-06-03 17:21:57.096  INFO 13076 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2020-06-03 17:21:57.097  INFO 13076 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-06-03 17:21:57.097  INFO 13076 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-06-03 17:21:58.138  INFO 13076 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2020-06-03 17:21:58.210  INFO 13076 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/shiro]  : Initializing Spring embedded WebApplicationContext
+2020-06-03 17:21:58.211  INFO 13076 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2038 ms
+2020-06-03 17:21:58.285  INFO 13076 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-06-03 17:21:58.378  INFO 13076 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-06-03 17:21:58.661  INFO 13076 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-03 17:21:58.911  INFO 13076 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path '/shiro'
+2020-06-03 17:21:58.920  INFO 13076 --- [main] c.e.springshiro.SpringshiroApplication   : Started SpringshiroApplication in 3.488 seconds (JVM running for 4.305)
+2020-06-03 17:21:58.922  INFO 13076 --- [main] c.e.springshiro.SpringshiroApplication   : SpringshiroApplication启动成功
