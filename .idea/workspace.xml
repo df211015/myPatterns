@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="310bc2ca-dabc-46e3-90ff-13390116c990" name="Default" comment="" />
+    <list default="true" id="310bc2ca-dabc-46e3-90ff-13390116c990" name="Default" comment="追加项目忽略配置文件">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -471,7 +473,17 @@
       <workItem from="1633936043359" duration="490000" />
       <workItem from="1633936561330" duration="1678000" />
       <workItem from="1634001210473" duration="11164000" />
+      <workItem from="1634197190698" duration="326000" />
+      <workItem from="1634197611922" duration="707000" />
     </task>
+    <task id="LOCAL-00001" summary="追加项目忽略配置文件">
+      <created>1634197342631</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1634197342631</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -480,11 +492,23 @@
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.cmd" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="追加项目忽略配置文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="追加项目忽略配置文件" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="387" y="5" key="#Notifications" timestamp="1634197641782">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="387" y="5" key="#Notifications/0.0.1366.728@0.0.1366.728" timestamp="1634197641782" />
     <state x="488" y="64" key="#com.intellij.ide.util.MemberChooser" timestamp="1634009713968">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="488" y="64" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1634009713968" />
+    <state x="317" y="0" key="CommitChangelistDialog2" timestamp="1634197342278">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="317" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1634197342278" />
     <state width="440" height="466" key="DebuggerActiveHint" timestamp="1631972675629">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -541,6 +565,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1323" height="407" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1634009045591" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1634197396179">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1634197396179" />
+    <state x="378" y="154" key="git4idea.merge.GitPullDialog" timestamp="1634197383708">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="378" y="154" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1634197383708" />
     <state x="95" y="57" key="new project wizard" timestamp="1633936331804">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
