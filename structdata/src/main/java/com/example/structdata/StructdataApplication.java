@@ -1,9 +1,11 @@
 package com.example.structdata;
 
-import com.example.structdata.service.ProcessFactory;
+import com.google.common.primitives.Ints;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import java.util.List;
 
 @SpringBootApplication
 public class StructdataApplication implements CommandLineRunner {
@@ -149,8 +151,36 @@ public class StructdataApplication implements CommandLineRunner {
 //        String provinceId = String.format("%s0000", String.valueOf(packagecityid).substring(0, 2));
 //        Integer myInt = Integer.valueOf(provinceId);
 
-        ProcessFactory.getMyProcess();
+//        ProcessFactory.getMyProcess();
+//
+//        String str = "更新后的文件名";
 
-        String str = "更新后的文件名";
+//        ItemDto itemDto_0 = new ItemDto();
+//        itemDto_0.setId("000");
+//        itemDto_0.setName("000_name");
+//        itemDto_0.setRemark("000_remark");
+//
+//        ItemDto itemDto_1 = new ItemDto();
+//        itemDto_1.setId("100");
+//        itemDto_1.setName("100_name");
+//        itemDto_1.setRemark("100_remark");
+//
+//        ItemDto itemDto_2 = new ItemDto();
+//        itemDto_2.setId("200");
+//        itemDto_2.setName("200_name");
+//        itemDto_2.setRemark("200_remark");
+//
+//        IlinkData ilinkData = new LinkDataImpl();
+//        ilinkData.add(itemDto_0);
+//        ilinkData.add(itemDto_1);
+//        ilinkData.add(itemDto_2);
+//
+//        ilinkData.show();
+
+        int[] intarray = {1, 2, 3, 4, 5};
+//        List<Integer> list = Arrays.asList(intarray);
+//        List<int[]> list = Arrays.asList(intarray);
+        List<Integer> list = Ints.asList(intarray);
+        System.out.println(list);
     }
 }
