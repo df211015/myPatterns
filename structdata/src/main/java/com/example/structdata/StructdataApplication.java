@@ -1,11 +1,10 @@
 package com.example.structdata;
 
-import com.google.common.primitives.Ints;
+import com.example.structdata.service.IdGenerator;
+import com.example.structdata.service.impl.RandomIdGenerator;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-import java.util.List;
 
 @SpringBootApplication
 public class StructdataApplication implements CommandLineRunner {
@@ -177,10 +176,22 @@ public class StructdataApplication implements CommandLineRunner {
 //
 //        ilinkData.show();
 
-        int[] intarray = {1, 2, 3, 4, 5};
+//        int[] intarray = {1, 2, 3, 4, 5};
 //        List<Integer> list = Arrays.asList(intarray);
 //        List<int[]> list = Arrays.asList(intarray);
-        List<Integer> list = Ints.asList(intarray);
-        System.out.println(list);
+//        List<Integer> list = Ints.asList(intarray);
+//        System.out.println(list);
+
+//        try {
+//            IdGenerator idGenerator = new RandomIdGenerator();
+//            String generate = idGenerator.generate();
+//        } catch (IllegalArgumentException ex) {
+//            String exMsg1 = "";
+//        } catch (Exception e) {
+//            String exMsg2 = "";
+//        }
+
+        IdGenerator idGenerator = new RandomIdGenerator();
+        String generate = idGenerator.generate();
     }
 }

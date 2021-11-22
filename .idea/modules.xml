@@ -22,6 +22,7 @@
       <module fileurl="file://$PROJECT_DIR$/prototypepattern/prototypepattern.iml" filepath="$PROJECT_DIR$/prototypepattern/prototypepattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/proxypattern/proxypattern.iml" filepath="$PROJECT_DIR$/proxypattern/proxypattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/redisdemo/redisdemo.iml" filepath="$PROJECT_DIR$/redisdemo/redisdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/retrofitdemo/retrofitdemo.iml" filepath="$PROJECT_DIR$/retrofitdemo/retrofitdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/singletonpattern/singletonpattern.iml" filepath="$PROJECT_DIR$/singletonpattern/singletonpattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/statepattern/statepattern.iml" filepath="$PROJECT_DIR$/statepattern/statepattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/structdata/structdata.iml" filepath="$PROJECT_DIR$/structdata/structdata.iml" />

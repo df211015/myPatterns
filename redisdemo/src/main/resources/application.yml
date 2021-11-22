@@ -1,9 +1,9 @@
 spring:
   redis:
     database: 0   # Redis数据库索引（默认为0）
-    host: 121.196.102.1  # Redis服务器地址
+    host: 10.6.1.22  # Redis服务器地址
     port: 6379  # Redis服务器连接端口
-    password: test123456   # Redis服务器连接密码（默认为空）
+    password: Yixin4redis   # Redis服务器连接密码（默认为空）
     timeout: 500  # 连接超时时间（毫秒）
     jedis:
       pool:
@@ -13,9 +13,9 @@ spring:
         min-idle: 0  # 连接池中的最小空闲连接
   redis-user:
     database: 2   # Redis数据库索引（默认为0）
-    host: 121.196.102.1  # Redis服务器地址
+    host: 10.6.1.22  # Redis服务器地址
     port: 6379  # Redis服务器连接端口
-    password: test123456   # Redis服务器连接密码（默认为空）
+    password: Yixin4redis   # Redis服务器连接密码（默认为空）
     timeout: 0  # 连接超时时间（毫秒）
     jedis:
       pool:

@@ -7,29 +7,30 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="chainpattern" />
-        <module name="bridgepattern" />
-        <module name="redisdemo" />
-        <module name="algorithmdemo" />
-        <module name="structdata" />
-        <module name="demo" />
-        <module name="commandpattern" />
-        <module name="singletonpattern" />
-        <module name="mediatorpattern" />
-        <module name="adapterpattern" />
-        <module name="visitorpattern" />
-        <module name="interpreter" />
-        <module name="mementopattern" />
         <module name="prototypepattern" />
-        <module name="builderpattern" />
+        <module name="proxypattern" />
+        <module name="decoratorpattern" />
         <module name="hutoolmytest" />
+        <module name="builderpattern" />
+        <module name="retrofitdemo" />
+        <module name="singletonpattern" />
+        <module name="commandpattern" />
+        <module name="visitorpattern" />
+        <module name="compositepattern" />
+        <module name="interpreter" />
         <module name="hutooldemo" />
         <module name="statepattern" />
-        <module name="observepattern" />
         <module name="flyweightpattern" />
-        <module name="decoratorpattern" />
-        <module name="proxypattern" />
-        <module name="compositepattern" />
+        <module name="demo" />
+        <module name="mediatorpattern" />
+        <module name="redisdemo" />
+        <module name="algorithmdemo" />
+        <module name="chainpattern" />
+        <module name="adapterpattern" />
+        <module name="mementopattern" />
+        <module name="observepattern" />
+        <module name="bridgepattern" />
+        <module name="structdata" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -52,6 +53,7 @@
       <module name="prototypepattern" target="1.8" />
       <module name="proxypattern" target="1.8" />
       <module name="redisdemo" target="1.8" />
+      <module name="retrofitdemo" target="1.8" />
       <module name="singletonpattern" target="1.8" />
       <module name="statepattern" target="1.8" />
       <module name="structdata" target="1.8" />
@@ -79,6 +81,7 @@
       <module name="prototypepattern" options="-parameters" />
       <module name="proxypattern" options="-parameters" />
       <module name="redisdemo" options="-parameters" />
+      <module name="retrofitdemo" options="-parameters" />
       <module name="singletonpattern" options="-parameters" />
       <module name="statepattern" options="-parameters" />
       <module name="structdata" options="-parameters" />

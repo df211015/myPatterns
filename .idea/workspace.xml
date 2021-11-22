@@ -1,8 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="310bc2ca-dabc-46e3-90ff-13390116c990" name="Default" comment="追加项目忽略配置文件">
+    <list default="true" id="310bc2ca-dabc-46e3-90ff-13390116c990" name="Default" comment="测试提交">
+      <change afterPath="$PROJECT_DIR$/structdata/src/main/java/com/example/structdata/service/IdGenerationFailureException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/structdata/src/main/java/com/example/structdata/service/IdGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/structdata/src/main/java/com/example/structdata/service/impl/RandomIdGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redisdemo/src/main/java/com/taoche/example/redisdemo/RedisdemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/redisdemo/src/main/java/com/taoche/example/redisdemo/RedisdemoApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redisdemo/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/redisdemo/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/structdata/src/main/java/com/example/structdata/StructdataApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/structdata/src/main/java/com/example/structdata/StructdataApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,18 +64,13 @@
         <option name="userSettingsFile" value="C:\Users\liudengfeng\m3\settings.xml" />
       </MavenGeneralSettings>
     </option>
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1jlhUSKgiCuvhXIiW27RhROsQk9" />
   <component name="ProjectViewState">
-    <option name="showExcludedFiles" value="true" />
+    <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -69,12 +78,16 @@
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path" value="node" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -88,7 +101,7 @@
       <recent name="D:\localtest\myPatterns\redisdemo\src\main\java\com\taoche\example\redisdemo\config" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.HutoolmytestApplication">
+  <component name="RunManager" selected="Application.StructdataApplication">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -123,27 +136,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MediatorpatternApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.MediatorpatternApplication" />
-      <module name="mediatorpattern" />
+    <configuration name="RedisdemoApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.taoche.example.redisdemo.RedisdemoApplication" />
+      <module name="redisdemo" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StatepatternApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.statepattern.StatepatternApplication" />
-      <module name="statepattern" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.statepattern.*" />
+          <option name="PATTERN" value="com.taoche.example.redisdemo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -158,6 +157,20 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.example.structdata.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VisitorpatternApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.visitorpattern.VisitorpatternApplication" />
+      <module name="visitorpattern" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.visitorpattern.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -311,6 +324,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RetrofitdemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="retrofitdemo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.retrofitdemo.RetrofitdemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SingletonpatternApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="singletonpattern" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.singletonpattern.SingletonpatternApplication" />
@@ -359,14 +379,15 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.HutoolmytestApplication" />
         <item itemvalue="Application.StructdataApplication" />
+        <item itemvalue="Application.RedisdemoApplication" />
+        <item itemvalue="Application.VisitorpatternApplication" />
+        <item itemvalue="Application.HutoolmytestApplication" />
         <item itemvalue="Application.DecoratorpatternApplication" />
-        <item itemvalue="Application.StatepatternApplication" />
-        <item itemvalue="Application.MediatorpatternApplication" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -475,6 +496,17 @@
       <workItem from="1634001210473" duration="11164000" />
       <workItem from="1634197190698" duration="326000" />
       <workItem from="1634197611922" duration="707000" />
+      <workItem from="1634261201938" duration="801000" />
+      <workItem from="1634874378028" duration="4611000" />
+      <workItem from="1635154032794" duration="2387000" />
+      <workItem from="1635306622087" duration="4795000" />
+      <workItem from="1635409464737" duration="5119000" />
+      <workItem from="1635909324036" duration="1615000" />
+      <workItem from="1636006729330" duration="4815000" />
+      <workItem from="1636017633354" duration="46000" />
+      <workItem from="1636092278569" duration="1549000" />
+      <workItem from="1637305658213" duration="3489000" />
+      <workItem from="1637552540120" duration="2352000" />
     </task>
     <task id="LOCAL-00001" summary="追加项目忽略配置文件">
       <created>1634197342631</created>
@@ -483,100 +515,55 @@
       <option name="project" value="LOCAL" />
       <updated>1634197342631</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="测试提交">
+      <created>1634261374819</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1634261374819</updated>
+    </task>
+    <task id="LOCAL-00003" summary="更新代码">
+      <created>1634889509156</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1634889509156</updated>
+    </task>
+    <task id="LOCAL-00004" summary="测试提交">
+      <created>1635912066321</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1635912066321</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.cmd" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="追加项目忽略配置文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="追加项目忽略配置文件" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="387" y="5" key="#Notifications" timestamp="1634197641782">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="387" y="5" key="#Notifications/0.0.1366.728@0.0.1366.728" timestamp="1634197641782" />
-    <state x="488" y="64" key="#com.intellij.ide.util.MemberChooser" timestamp="1634009713968">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="488" y="64" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1634009713968" />
-    <state x="317" y="0" key="CommitChangelistDialog2" timestamp="1634197342278">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="317" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1634197342278" />
-    <state width="440" height="466" key="DebuggerActiveHint" timestamp="1631972675629">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="440" height="466" key="DebuggerActiveHint/0.0.1366.728@0.0.1366.728" timestamp="1631972675629" />
-    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1634090946258">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1634090946258" />
-    <state width="1323" height="329" key="GridCell.Tab.0.bottom" timestamp="1634115538997">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="329" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1634115538997" />
-    <state width="1323" height="329" key="GridCell.Tab.0.center" timestamp="1634115538997">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="329" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1634115538997" />
-    <state width="1323" height="329" key="GridCell.Tab.0.left" timestamp="1634115538997">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="329" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1634115538997" />
-    <state width="1323" height="329" key="GridCell.Tab.0.right" timestamp="1634115538997">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="329" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1634115538997" />
-    <state width="1323" height="266" key="GridCell.Tab.1.bottom" timestamp="1634115538994">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="266" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1634115538994" />
-    <state width="1323" height="266" key="GridCell.Tab.1.center" timestamp="1634115538994">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="266" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1634115538994" />
-    <state width="1323" height="266" key="GridCell.Tab.1.left" timestamp="1634115538994">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="266" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1634115538994" />
-    <state width="1323" height="266" key="GridCell.Tab.1.right" timestamp="1634115538994">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="266" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1634115538994" />
-    <state width="1323" height="407" key="GridCell.Tab.2.bottom" timestamp="1634009045591">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="407" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1634009045591" />
-    <state width="1323" height="407" key="GridCell.Tab.2.center" timestamp="1634009045591">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="407" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1634009045591" />
-    <state width="1323" height="407" key="GridCell.Tab.2.left" timestamp="1634009045591">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="407" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1634009045591" />
-    <state width="1323" height="407" key="GridCell.Tab.2.right" timestamp="1634009045591">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="407" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1634009045591" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1634197396179">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1634197396179" />
-    <state x="378" y="154" key="git4idea.merge.GitPullDialog" timestamp="1634197383708">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="378" y="154" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1634197383708" />
-    <state x="95" y="57" key="new project wizard" timestamp="1633936331804">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="95" y="57" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1633936331804" />
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="追加项目忽略配置文件" />
+    <MESSAGE value="更新代码" />
+    <MESSAGE value="测试提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="测试提交" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -590,6 +577,31 @@
           <url>file://$PROJECT_DIR$/statepattern/src/main/java/com/example/statepattern/StatepatternApplication.java</url>
           <line>57</line>
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/structdata/src/main/java/com/example/structdata/StructdataApplication.java</url>
+          <line>182</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/redisdemo/src/main/java/com/taoche/example/redisdemo/RedisdemoApplication.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/redisdemo/src/main/java/com/taoche/example/redisdemo/RedisdemoApplication.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/redisdemo/src/main/java/com/taoche/example/redisdemo/RedisdemoApplication.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/redisdemo/src/main/java/com/taoche/example/redisdemo/config/config01/UserRedisClusterConfig.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
