@@ -4,19 +4,19 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="310bc2ca-dabc-46e3-90ff-13390116c990" name="Default" comment="测试提交">
-      <change afterPath="$PROJECT_DIR$/structdata/src/main/java/com/example/structdata/service/IdGenerationFailureException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/structdata/src/main/java/com/example/structdata/service/IdGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/structdata/src/main/java/com/example/structdata/service/impl/RandomIdGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="310bc2ca-dabc-46e3-90ff-13390116c990" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/performancemonitor/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/performancemonitor/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/performancemonitor/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/performancemonitor/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/performancemonitor/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/performancemonitor/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/performancemonitor/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/performancemonitor/src/main/java/com/dfliu/performancemonitor/PerformancemonitorApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/performancemonitor/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/performancemonitor/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/performancemonitor/src/test/java/com/dfliu/performancemonitor/PerformancemonitorApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redisdemo/src/main/java/com/taoche/example/redisdemo/RedisdemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/redisdemo/src/main/java/com/taoche/example/redisdemo/RedisdemoApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redisdemo/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/redisdemo/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/structdata/src/main/java/com/example/structdata/StructdataApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/structdata/src/main/java/com/example/structdata/StructdataApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +82,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../mygithubext/project/datainit/permissiondata" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
@@ -506,7 +506,8 @@
       <workItem from="1636017633354" duration="46000" />
       <workItem from="1636092278569" duration="1549000" />
       <workItem from="1637305658213" duration="3489000" />
-      <workItem from="1637552540120" duration="2352000" />
+      <workItem from="1637552540120" duration="5425000" />
+      <workItem from="1637746290431" duration="119000" />
     </task>
     <task id="LOCAL-00001" summary="追加项目忽略配置文件">
       <created>1634197342631</created>
@@ -536,7 +537,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635912066321</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="测试提交">
+      <created>1637562273879</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1637562273880</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
