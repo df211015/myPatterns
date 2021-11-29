@@ -1,0 +1,4 @@
+server:
+  port: 8055
+  servlet:
+    context-path: /performance
