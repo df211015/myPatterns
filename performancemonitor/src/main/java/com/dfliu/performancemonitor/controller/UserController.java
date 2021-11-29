@@ -1,7 +1,7 @@
 package com.dfliu.performancemonitor.controller;
 
 import com.dfliu.performancemonitor.domain.vo.UserVo;
-import com.dfliu.performancemonitor.service.impl.Metrics;
+import com.dfliu.performancemonitor.service.impl.v1.Metrics;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.RestController;
 
