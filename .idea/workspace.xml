@@ -5,18 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="310bc2ca-dabc-46e3-90ff-13390116c990" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/performancemonitor/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/performancemonitor/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/performancemonitor/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/performancemonitor/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/performancemonitor/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/performancemonitor/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/performancemonitor/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/performancemonitor/src/main/java/com/dfliu/performancemonitor/PerformancemonitorApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/performancemonitor/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/performancemonitor/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/performancemonitor/src/test/java/com/dfliu/performancemonitor/PerformancemonitorApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/decoratorpattern/src/main/java/com/example/service/superMan/AbsSkillPackage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/decoratorpattern/src/main/java/com/example/service/superMan/DefenseSkill.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/decoratorpattern/src/main/java/com/example/service/superMan/FlySkill.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/decoratorpattern/src/main/java/com/example/service/superMan/NormalSkill.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/decoratorpattern/src/main/java/com/example/service/superMan/SkillDecorator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/decoratorpattern/src/main/java/com/example/DecoratorpatternApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/decoratorpattern/src/main/java/com/example/DecoratorpatternApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +77,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../mygithubext/project/datainit/permissiondata" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
@@ -101,7 +96,7 @@
       <recent name="D:\localtest\myPatterns\redisdemo\src\main\java\com\taoche\example\redisdemo\config" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.StructdataApplication">
+  <component name="RunManager" selected="Application.DecoratorpatternApplication">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -379,11 +374,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DecoratorpatternApplication" />
         <item itemvalue="Application.StructdataApplication" />
         <item itemvalue="Application.RedisdemoApplication" />
         <item itemvalue="Application.VisitorpatternApplication" />
         <item itemvalue="Application.HutoolmytestApplication" />
-        <item itemvalue="Application.DecoratorpatternApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -508,6 +503,7 @@
       <workItem from="1637305658213" duration="3489000" />
       <workItem from="1637552540120" duration="5425000" />
       <workItem from="1637746290431" duration="119000" />
+      <workItem from="1638326989703" duration="3072000" />
     </task>
     <task id="LOCAL-00001" summary="追加项目忽略配置文件">
       <created>1634197342631</created>

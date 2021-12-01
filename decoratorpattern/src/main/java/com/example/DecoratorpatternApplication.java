@@ -1,8 +1,9 @@
 package com.example;
 
-import com.example.service.imgBox.Img;
-import com.example.service.imgBox.ImgOfColor;
-import com.example.service.imgBox.MyImg;
+import com.example.service.superMan.AbsSkillPackage;
+import com.example.service.superMan.DefenseSkill;
+import com.example.service.superMan.FlySkill;
+import com.example.service.superMan.NormalSkill;
 import org.springframework.boot.Banner;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -39,10 +40,15 @@ public class DecoratorpatternApplication implements CommandLineRunner {
 //        virtualVehicle = new VirtualVehiclePlusOfPrice(virtualVehicle, 10d, 20d, "234567890");
 //        VehicleInfo vehicleInfo = virtualVehicle.generateVehicle("123456789");
 
-        Img img = new MyImg();
-        img = new ImgOfColor(img);
-        img.ImgDescription();
+//        Img img = new MyImg();
+//        img = new ImgOfColor(img);
+//        img.ImgDescription();
+//
+//        String str = "";
 
-        String str = "";
+        AbsSkillPackage absSkillPackage = new NormalSkill();
+        absSkillPackage = new FlySkill(absSkillPackage);
+        absSkillPackage = new DefenseSkill(absSkillPackage);
+        absSkillPackage.getSkillPackage();
     }
 }
