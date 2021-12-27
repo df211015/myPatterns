@@ -1,7 +1,7 @@
 package com.example.algorithmdemo;
 
 import com.example.algorithmdemo.service.mySort.Sortable;
-import com.example.algorithmdemo.service.mySort.impl.MergeSort;
+import com.example.algorithmdemo.service.mySort.impl.v1.InsertSortExt;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -40,10 +40,10 @@ public class AlgorithmdemoApplication implements CommandLineRunner {
 //        mySort.sort(arr);
 //        mySort.display("希尔排序处理后数组", arr);
 
-        mySort = new MergeSort();
-        mySort.display("归并排序处理前数组", arr);
-        mySort.mergerSort(arr, 0, arr.length - 1);
-        mySort.display("归并排序处理后数组", arr);
+//        mySort = new MergeSort();
+//        mySort.display("归并排序处理前数组", arr);
+//        mySort.mergerSort(arr, 0, arr.length - 1);
+//        mySort.display("归并排序处理后数组", arr);
 
 //        mySort = new QuickSort();
 //        mySort.display("快速排序处理前数组", arr);
@@ -54,5 +54,10 @@ public class AlgorithmdemoApplication implements CommandLineRunner {
 //        mySort.display("堆排序处理前数组", arr);
 //        mySort.sort(arr);
 //        mySort.display("堆排序处理后数组", arr);
+
+        mySort = new InsertSortExt();
+        mySort.display("插入排序处理前数组", arr);
+        mySort.sort(arr);
+        mySort.display("插入排序处后数组", arr);
     }
 }
