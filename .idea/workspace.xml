@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="310bc2ca-dabc-46e3-90ff-13390116c990" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/algorithmdemo/src/main/java/com/example/algorithmdemo/service/mySort/impl/v1/InsertSortExt.java" afterDir="false" />
+    <list default="true" id="310bc2ca-dabc-46e3-90ff-13390116c990" name="Default" comment="重写插入排序算法">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithmdemo/src/main/java/com/example/algorithmdemo/AlgorithmdemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithmdemo/src/main/java/com/example/algorithmdemo/AlgorithmdemoApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/visitorpattern/src/main/java/com/example/visitorpattern/service/v1/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/visitorpattern/src/main/java/com/example/visitorpattern/service/v1/Manager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -511,6 +510,10 @@
       <workItem from="1639014063662" duration="12938000" />
       <workItem from="1639532153954" duration="1008000" />
       <workItem from="1640514105319" duration="3372000" />
+      <workItem from="1640566720051" duration="76000" />
+      <workItem from="1640854326921" duration="1991000" />
+      <workItem from="1640918809318" duration="1395000" />
+      <workItem from="1641259926395" duration="31000" />
     </task>
     <task id="LOCAL-00001" summary="追加项目忽略配置文件">
       <created>1634197342631</created>
@@ -561,7 +564,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639042644186</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="重写插入排序算法">
+      <created>1640566763032</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1640566763032</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -591,13 +601,18 @@
     <MESSAGE value="测试提交" />
     <MESSAGE value="追加装饰者模式" />
     <MESSAGE value="重写组合模式" />
-    <option name="LAST_COMMIT_MESSAGE" value="重写组合模式" />
+    <MESSAGE value="重写插入排序算法" />
+    <option name="LAST_COMMIT_MESSAGE" value="重写插入排序算法" />
   </component>
   <component name="WindowStateProjectService">
     <state x="488" y="73" key="#com.intellij.ide.util.MemberChooser" timestamp="1640514864004">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="488" y="73" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1640514864004" />
+    <state x="286" y="0" key="CommitChangelistDialog2" timestamp="1640566762488">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="286" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1640566762488" />
     <state width="1323" height="269" key="GridCell.Tab.0.bottom" timestamp="1640521515887">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -630,6 +645,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1323" height="269" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1640521515887" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1640566764562">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1640566764562" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
