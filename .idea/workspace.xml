@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="310bc2ca-dabc-46e3-90ff-13390116c990" name="Default" comment="重写插入排序算法">
+      <change afterPath="$PROJECT_DIR$/algorithmdemo/src/main/java/com/example/algorithmdemo/service/mySort/impl/v1/Merge.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/visitorpattern/src/main/java/com/example/visitorpattern/service/v1/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/visitorpattern/src/main/java/com/example/visitorpattern/service/v1/Manager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithmdemo/src/main/java/com/example/algorithmdemo/AlgorithmdemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithmdemo/src/main/java/com/example/algorithmdemo/AlgorithmdemoApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithmdemo/src/main/java/com/example/algorithmdemo/service/mySort/impl/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithmdemo/src/main/java/com/example/algorithmdemo/service/mySort/impl/MergeSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithmdemo/src/main/java/com/example/algorithmdemo/service/mySort/impl/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithmdemo/src/main/java/com/example/algorithmdemo/service/mySort/impl/QuickSort.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +99,7 @@
       <recent name="com.example.structdata.service" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.AlgorithmdemoApplication">
+  <component name="RunManager" selected="Application.Merge">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -145,13 +148,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RedisdemoApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.taoche.example.redisdemo.RedisdemoApplication" />
-      <module name="redisdemo" />
+    <configuration name="Merge" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.algorithmdemo.service.mySort.impl.v1.Merge" />
+      <module name="algorithmdemo" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.taoche.example.redisdemo.*" />
+          <option name="PATTERN" value="com.example.algorithmdemo.service.mySort.impl.v1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -374,11 +377,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Merge" />
         <item itemvalue="Application.AlgorithmdemoApplication" />
         <item itemvalue="Application.CompositepatternApplication" />
         <item itemvalue="Application.VisitorpatternApplication" />
         <item itemvalue="Application.MediatorpatternApplication" />
-        <item itemvalue="Application.RedisdemoApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -513,7 +516,8 @@
       <workItem from="1640566720051" duration="76000" />
       <workItem from="1640854326921" duration="1991000" />
       <workItem from="1640918809318" duration="1395000" />
-      <workItem from="1641259926395" duration="31000" />
+      <workItem from="1641259926395" duration="1345000" />
+      <workItem from="1641267951822" duration="17324000" />
     </task>
     <task id="LOCAL-00001" summary="追加项目忽略配置文件">
       <created>1634197342631</created>
@@ -571,7 +575,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640566763032</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="重写插入排序算法">
+      <created>1641259970021</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1641259970021</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -609,46 +620,58 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="488" y="73" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1640514864004" />
-    <state x="286" y="0" key="CommitChangelistDialog2" timestamp="1640566762488">
+    <state x="286" y="0" key="CommitChangelistDialog2" timestamp="1641259969543">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="286" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1640566762488" />
-    <state width="1323" height="269" key="GridCell.Tab.0.bottom" timestamp="1640521515887">
+    <state x="286" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1641259969543" />
+    <state width="407" height="466" key="DebuggerActiveHint" timestamp="1641346362471">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="269" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1640521515887" />
-    <state width="1323" height="269" key="GridCell.Tab.0.center" timestamp="1640521515887">
+    <state width="407" height="466" key="DebuggerActiveHint/0.0.1366.728@0.0.1366.728" timestamp="1641346362471" />
+    <state x="126" y="54" key="DiffContextDialog" timestamp="1641259967033">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="269" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1640521515887" />
-    <state width="1323" height="269" key="GridCell.Tab.0.left" timestamp="1640521515886">
+    <state x="126" y="54" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1641259967033" />
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1641260462479">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="269" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1640521515886" />
-    <state width="1323" height="269" key="GridCell.Tab.0.right" timestamp="1640521515887">
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1641260462479" />
+    <state width="1323" height="296" key="GridCell.Tab.0.bottom" timestamp="1641353530706">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="269" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1640521515887" />
-    <state width="1323" height="269" key="GridCell.Tab.1.bottom" timestamp="1640521515887">
+    <state width="1323" height="296" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1641353530706" />
+    <state width="1323" height="296" key="GridCell.Tab.0.center" timestamp="1641353530706">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="269" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1640521515887" />
-    <state width="1323" height="269" key="GridCell.Tab.1.center" timestamp="1640521515887">
+    <state width="1323" height="296" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1641353530706" />
+    <state width="1323" height="296" key="GridCell.Tab.0.left" timestamp="1641353530706">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="269" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1640521515887" />
-    <state width="1323" height="269" key="GridCell.Tab.1.left" timestamp="1640521515887">
+    <state width="1323" height="296" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1641353530706" />
+    <state width="1323" height="296" key="GridCell.Tab.0.right" timestamp="1641353530706">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="269" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1640521515887" />
-    <state width="1323" height="269" key="GridCell.Tab.1.right" timestamp="1640521515887">
+    <state width="1323" height="296" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1641353530706" />
+    <state width="1323" height="296" key="GridCell.Tab.1.bottom" timestamp="1641353530706">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="269" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1640521515887" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1640566764562">
+    <state width="1323" height="296" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1641353530706" />
+    <state width="1323" height="296" key="GridCell.Tab.1.center" timestamp="1641353530706">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1640566764562" />
+    <state width="1323" height="296" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1641353530706" />
+    <state width="1323" height="296" key="GridCell.Tab.1.left" timestamp="1641353530706">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="296" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1641353530706" />
+    <state width="1323" height="296" key="GridCell.Tab.1.right" timestamp="1641353530706">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="296" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1641353530706" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1641259971410">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1641259971410" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -667,6 +690,61 @@
           <url>file://$PROJECT_DIR$/structdata/src/main/java/com/example/structdata/StructdataApplication.java</url>
           <line>182</line>
           <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/algorithmdemo/src/main/java/com/example/algorithmdemo/service/mySort/impl/MergeSort.java</url>
+          <line>70</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/algorithmdemo/src/main/java/com/example/algorithmdemo/service/mySort/impl/MergeSort.java</url>
+          <line>72</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/algorithmdemo/src/main/java/com/example/algorithmdemo/service/mySort/impl/MergeSort.java</url>
+          <line>74</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/algorithmdemo/src/main/java/com/example/algorithmdemo/service/mySort/impl/MergeSort.java</url>
+          <line>76</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/algorithmdemo/src/main/java/com/example/algorithmdemo/service/mySort/impl/MergeSort.java</url>
+          <line>67</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/algorithmdemo/src/main/java/com/example/algorithmdemo/AlgorithmdemoApplication.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/algorithmdemo/src/main/java/com/example/algorithmdemo/AlgorithmdemoApplication.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/algorithmdemo/src/main/java/com/example/algorithmdemo/AlgorithmdemoApplication.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/algorithmdemo/src/main/java/com/example/algorithmdemo/service/mySort/impl/MergeSort.java</url>
+          <line>68</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/algorithmdemo/src/main/java/com/example/algorithmdemo/service/mySort/impl/v1/Merge.java</url>
+          <line>5</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/algorithmdemo/src/main/java/com/example/algorithmdemo/service/mySort/impl/v1/Merge.java</url>
+          <line>4</line>
+          <option name="timeStamp" value="24" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

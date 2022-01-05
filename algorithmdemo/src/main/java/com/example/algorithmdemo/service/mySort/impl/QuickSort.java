@@ -49,7 +49,7 @@ public class QuickSort extends Sortable {
             arr[j] = temp;
         }
         arr[left] = arr[j];
-        //将基准元素放置到下标i处
+        //将基准元素放置到下标j处
         arr[j] = pivot;
         return j;
     }
