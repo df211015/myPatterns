@@ -4,16 +4,26 @@ import com.example.factorypattern.domain.constants.EShape;
 import com.example.factorypattern.domain.dto.Circle;
 import com.example.factorypattern.domain.dto.Rect;
 import com.example.factorypattern.domain.dto.Shape;
+import com.example.factorypattern.domain.dto.Triangle;
 
 /**
  * 简单工厂模式
  */
 public class SimpleFactory {
-    public static Shape getShape(EShape shape) {
+    /**
+     * 通过静态方式封装实例的产生过程
+     *
+     * @param shape
+     * @return
+     */
+    public static Shape getShapeInstance(EShape shape) {
+        Shape myShape = null;
         if (EShape.circle.equals(shape)) {
-            return new Circle();
+            myShape = new Circle();
         } else if (EShape.rect.equals(shape)) {
-            return new Rect();
+            myShape = new Rect();
+        } else if (EShape.tri.equals(shape)) {
+            myShape = new Triangle();
         }
 
         return null;

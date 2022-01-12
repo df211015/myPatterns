@@ -11,6 +11,6 @@ public class Rect extends Shape {
 
     @Override
     public String getDescription() {
-        return "长方形物体";
+        return "长方形";
     }
 }

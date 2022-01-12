@@ -16,7 +16,10 @@ public class FactorypatternApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        Shape shape = SimpleFactory.getShape(EShape.circle);
+        /**
+         *
+         */
+        Shape shape = SimpleFactory.getShapeInstance(EShape.circle);
 
         System.out.println(String.format("返回:%s", (null != shape) ? shape.getDescription() : "产品空"));
     }

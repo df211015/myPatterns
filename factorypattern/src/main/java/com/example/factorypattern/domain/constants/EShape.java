@@ -1,8 +1,9 @@
 package com.example.factorypattern.domain.constants;
 
 public enum EShape {
-    circle(1,"圆形"),
-    rect(2,"矩形"),
+    circle(1, "圆形"),
+    rect(2, "矩形"),
+    tri(3, "三角形"),
     ;
 
     public Integer getIndex() {

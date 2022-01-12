@@ -9,6 +9,6 @@ public class Circle extends Shape {
 
     @Override
     public String getDescription() {
-        return "圆形物体";
+        return "圆形";
     }
 }
