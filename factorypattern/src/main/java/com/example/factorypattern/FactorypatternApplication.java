@@ -1,8 +1,8 @@
 package com.example.factorypattern;
 
-import com.example.factorypattern.domain.constants.EShape;
 import com.example.factorypattern.domain.dto.Shape;
-import com.example.factorypattern.service.v1.SimpleFactory;
+import com.example.factorypattern.service.v2.AbsShapeFactory;
+import com.example.factorypattern.service.v2.CircleFactory;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -17,9 +17,15 @@ public class FactorypatternApplication implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         /**
-         *
+         * 简单工厂模式
          */
-        Shape shape = SimpleFactory.getShapeInstance(EShape.circle);
+//        Shape shape = SimpleShapeFactory.getShapeInstance(EShape.circle);
+
+        /**
+         * 工厂模式(工厂方法模式)
+         */
+        AbsShapeFactory shapeFactory = new CircleFactory();
+        Shape shape = shapeFactory.createShape();
 
         System.out.println(String.format("返回:%s", (null != shape) ? shape.getDescription() : "产品空"));
     }

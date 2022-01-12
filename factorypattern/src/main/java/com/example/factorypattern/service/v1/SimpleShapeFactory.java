@@ -9,7 +9,7 @@ import com.example.factorypattern.domain.dto.Triangle;
 /**
  * 简单工厂模式
  */
-public class SimpleFactory {
+public class SimpleShapeFactory {
     /**
      * 通过静态方式封装实例的产生过程
      *
