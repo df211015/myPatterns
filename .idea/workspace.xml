@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="310bc2ca-dabc-46e3-90ff-13390116c990" name="Default" comment="追加工厂模式">
-      <change afterPath="$PROJECT_DIR$/factorypattern/src/main/java/com/example/factorypattern/domain/constants/EShape.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/factorypattern/src/main/java/com/example/factorypattern/domain/dto/Circle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/factorypattern/src/main/java/com/example/factorypattern/domain/dto/Rect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/factorypattern/src/main/java/com/example/factorypattern/domain/dto/Shape.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/factorypattern/src/main/java/com/example/factorypattern/service/v1/SimpleFactory.java" afterDir="false" />
+    <list default="true" id="310bc2ca-dabc-46e3-90ff-13390116c990" name="Default" comment="完善工厂模式示例程序">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/factorypattern/src/main/java/com/example/factorypattern/FactorypatternApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/factorypattern/src/main/java/com/example/factorypattern/FactorypatternApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -530,7 +524,7 @@
       <workItem from="1641267951822" duration="20195000" />
       <workItem from="1641450451125" duration="2432000" />
       <workItem from="1641794449580" duration="833000" />
-      <workItem from="1641951200773" duration="4115000" />
+      <workItem from="1641951200773" duration="4371000" />
     </task>
     <task id="LOCAL-00001" summary="追加项目忽略配置文件">
       <created>1634197342631</created>
@@ -609,7 +603,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641957128762</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="完善工厂模式示例程序">
+      <created>1641959455031</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1641959455031</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -641,17 +642,18 @@
     <MESSAGE value="重写组合模式" />
     <MESSAGE value="重写插入排序算法" />
     <MESSAGE value="追加工厂模式" />
-    <option name="LAST_COMMIT_MESSAGE" value="追加工厂模式" />
+    <MESSAGE value="完善工厂模式示例程序" />
+    <option name="LAST_COMMIT_MESSAGE" value="完善工厂模式示例程序" />
   </component>
   <component name="WindowStateProjectService">
     <state x="488" y="73" key="#com.intellij.ide.util.MemberChooser" timestamp="1641959220281">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="488" y="73" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1641959220281" />
-    <state x="286" y="0" key="CommitChangelistDialog2" timestamp="1641957128278">
+    <state x="286" y="0" key="CommitChangelistDialog2" timestamp="1641959454616">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="286" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1641957128278" />
+    <state x="286" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1641959454616" />
     <state width="407" height="466" key="DebuggerActiveHint" timestamp="1641346362471">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -712,14 +714,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1323" height="296" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1641959425642" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1641957165713">
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1641959492426">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1641957165713" />
-    <state x="378" y="154" key="git4idea.merge.GitPullDialog" timestamp="1641957138798">
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1641959492426" />
+    <state x="378" y="154" key="git4idea.merge.GitPullDialog" timestamp="1641959483368">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="378" y="154" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1641957138798" />
+    <state x="378" y="154" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1641959483368" />
     <state x="57" y="0" key="new project wizard" timestamp="1641956827735">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
