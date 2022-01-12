@@ -7,30 +7,31 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="prototypepattern" />
-        <module name="proxypattern" />
-        <module name="decoratorpattern" />
-        <module name="hutoolmytest" />
-        <module name="builderpattern" />
-        <module name="retrofitdemo" />
+        <module name="chainpattern" />
+        <module name="bridgepattern" />
+        <module name="factorypattern" />
+        <module name="algorithmdemo" />
+        <module name="structdata" />
         <module name="singletonpattern" />
         <module name="commandpattern" />
-        <module name="visitorpattern" />
-        <module name="compositepattern" />
-        <module name="interpreter" />
-        <module name="hutooldemo" />
-        <module name="statepattern" />
-        <module name="flyweightpattern" />
         <module name="demo" />
         <module name="mediatorpattern" />
-        <module name="redisdemo" />
-        <module name="algorithmdemo" />
-        <module name="chainpattern" />
+        <module name="builderpattern" />
         <module name="adapterpattern" />
+        <module name="visitorpattern" />
+        <module name="interpreter" />
         <module name="mementopattern" />
+        <module name="retrofitdemo" />
+        <module name="redisdemo" />
+        <module name="prototypepattern" />
+        <module name="hutoolmytest" />
+        <module name="hutooldemo" />
+        <module name="statepattern" />
         <module name="observepattern" />
-        <module name="bridgepattern" />
-        <module name="structdata" />
+        <module name="flyweightpattern" />
+        <module name="decoratorpattern" />
+        <module name="proxypattern" />
+        <module name="compositepattern" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -43,6 +44,7 @@
       <module name="compositepattern" target="1.8" />
       <module name="decoratorpattern" target="1.8" />
       <module name="demo" target="1.8" />
+      <module name="factorypattern" target="1.8" />
       <module name="flyweightpattern" target="1.8" />
       <module name="hutooldemo" target="1.8" />
       <module name="hutoolmytest" target="1.8" />
@@ -71,6 +73,7 @@
       <module name="compositepattern" options="-parameters" />
       <module name="decoratorpattern" options="-parameters" />
       <module name="demo" options="-parameters" />
+      <module name="factorypattern" options="-parameters" />
       <module name="flyweightpattern" options="-parameters" />
       <module name="hutooldemo" options="-parameters" />
       <module name="hutoolmytest" options="-parameters" />

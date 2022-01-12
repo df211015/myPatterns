@@ -11,6 +11,7 @@
       <module fileurl="file://$PROJECT_DIR$/compositepattern/compositepattern.iml" filepath="$PROJECT_DIR$/compositepattern/compositepattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/decoratorpattern/decoratorpattern.iml" filepath="$PROJECT_DIR$/decoratorpattern/decoratorpattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/iteratorpattern/demo.iml" filepath="$PROJECT_DIR$/iteratorpattern/demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/factorypattern/factorypattern.iml" filepath="$PROJECT_DIR$/factorypattern/factorypattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/flyweightpattern/flyweightpattern.iml" filepath="$PROJECT_DIR$/flyweightpattern/flyweightpattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/hutooltest/hutooldemo.iml" filepath="$PROJECT_DIR$/hutooltest/hutooldemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/hutoolmytest/hutoolmytest.iml" filepath="$PROJECT_DIR$/hutoolmytest/hutoolmytest.iml" />
