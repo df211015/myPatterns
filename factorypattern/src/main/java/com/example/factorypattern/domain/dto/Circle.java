@@ -9,6 +9,6 @@ public class Circle extends Shape {
 
     @Override
     public String getDescription() {
-        return "圆形";
+        return String.format("%s圆形", super.getRank());
     }
 }

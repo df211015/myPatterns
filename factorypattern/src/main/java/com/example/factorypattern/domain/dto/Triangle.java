@@ -10,6 +10,6 @@ public class Triangle extends Shape {
 
     @Override
     public String getDescription() {
-        return "三角形";
+        return String.format("%s三角形", super.getRank());
     }
 }

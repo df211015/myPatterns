@@ -11,6 +11,6 @@ public class Rect extends Shape {
 
     @Override
     public String getDescription() {
-        return "长方形";
+        return String.format("%s长方形", super.getRank());
     }
 }
