@@ -1,12 +1,11 @@
 package com.example.factorypattern.domain.constants;
 
 /**
- * 形状枚举
+ * 等级枚举
  */
-public enum EShape {
-    circle(1, "圆形"),
-    rect(2, "矩形"),
-    tri(3, "三角形"),
+public enum ERank {
+    normal(1, "普通"),
+    top(2, "顶级"),
     ;
 
     public Integer getIndex() {
@@ -28,7 +27,7 @@ public enum EShape {
     private Integer index;
     private String description;
 
-    EShape(Integer index, String description) {
+    ERank(Integer index, String description) {
         this.index = index;
         this.description = description;
     }

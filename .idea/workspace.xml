@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="310bc2ca-dabc-46e3-90ff-13390116c990" name="Default" comment="完善工厂模式(工厂方法模式)代码示例">
-      <change afterPath="$PROJECT_DIR$/factorypattern/src/main/java/com/example/factorypattern/service/v3/AbsRankShapeFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/factorypattern/src/main/java/com/example/factorypattern/service/v3/NormalShapeFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/factorypattern/src/main/java/com/example/factorypattern/service/v3/TopShapeFactory.java" afterDir="false" />
+    <list default="true" id="310bc2ca-dabc-46e3-90ff-13390116c990" name="Default" comment="完善工厂模式,抽象工厂模式代码示例">
+      <change afterPath="$PROJECT_DIR$/factorypattern/src/main/java/com/example/factorypattern/domain/constants/ERank.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/factorypattern/src/main/java/com/example/factorypattern/service/v4/StrategyContext.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/factorypattern/src/main/java/com/example/factorypattern/FactorypatternApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/factorypattern/src/main/java/com/example/factorypattern/FactorypatternApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/factorypattern/src/main/java/com/example/factorypattern/domain/dto/Rect.java" beforeDir="false" afterPath="$PROJECT_DIR$/factorypattern/src/main/java/com/example/factorypattern/domain/dto/Rect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/factorypattern/src/main/java/com/example/factorypattern/domain/dto/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/factorypattern/src/main/java/com/example/factorypattern/domain/dto/Shape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/factorypattern/src/main/java/com/example/factorypattern/domain/constants/EShape.java" beforeDir="false" afterPath="$PROJECT_DIR$/factorypattern/src/main/java/com/example/factorypattern/domain/constants/EShape.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,8 +43,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Enum" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -533,7 +531,8 @@
       <workItem from="1641951200773" duration="8597000" />
       <workItem from="1641970221659" duration="165000" />
       <workItem from="1642053708901" duration="1346000" />
-      <workItem from="1642148313872" duration="1804000" />
+      <workItem from="1642148313872" duration="2590000" />
+      <workItem from="1642399508329" duration="1712000" />
     </task>
     <task id="LOCAL-00001" summary="追加项目忽略配置文件">
       <created>1634197342631</created>
@@ -654,7 +653,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641968943677</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="完善工厂模式,抽象工厂模式代码示例">
+      <created>1642150244532</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1642150244532</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -689,17 +695,18 @@
     <MESSAGE value="完善工厂模式示例程序" />
     <MESSAGE value="完善工厂模式示例程序fixed" />
     <MESSAGE value="完善工厂模式(工厂方法模式)代码示例" />
-    <option name="LAST_COMMIT_MESSAGE" value="完善工厂模式(工厂方法模式)代码示例" />
+    <MESSAGE value="完善工厂模式,抽象工厂模式代码示例" />
+    <option name="LAST_COMMIT_MESSAGE" value="完善工厂模式,抽象工厂模式代码示例" />
   </component>
   <component name="WindowStateProjectService">
     <state x="488" y="73" key="#com.intellij.ide.util.MemberChooser" timestamp="1642149708493">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="488" y="73" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1642149708493" />
-    <state x="286" y="0" key="CommitChangelistDialog2" timestamp="1641968943321">
+    <state x="286" y="0" key="CommitChangelistDialog2" timestamp="1642399620227">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="286" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1641968943321" />
+    <state x="286" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1642399620227" />
     <state width="407" height="466" key="DebuggerActiveHint" timestamp="1641346362471">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -712,38 +719,38 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1641970314664" />
-    <state width="1323" height="296" key="GridCell.Tab.0.bottom" timestamp="1642150136312">
+    <state width="1323" height="296" key="GridCell.Tab.0.bottom" timestamp="1642402951008">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="296" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1642150136312" />
-    <state width="1323" height="296" key="GridCell.Tab.0.center" timestamp="1642150136312">
+    <state width="1323" height="296" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1642402951008" />
+    <state width="1323" height="296" key="GridCell.Tab.0.center" timestamp="1642402951008">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="296" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1642150136312" />
-    <state width="1323" height="296" key="GridCell.Tab.0.left" timestamp="1642150136312">
+    <state width="1323" height="296" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1642402951008" />
+    <state width="1323" height="296" key="GridCell.Tab.0.left" timestamp="1642402951008">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="296" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1642150136312" />
-    <state width="1323" height="296" key="GridCell.Tab.0.right" timestamp="1642150136312">
+    <state width="1323" height="296" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1642402951008" />
+    <state width="1323" height="296" key="GridCell.Tab.0.right" timestamp="1642402951008">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="296" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1642150136312" />
-    <state width="1323" height="296" key="GridCell.Tab.1.bottom" timestamp="1642150136312">
+    <state width="1323" height="296" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1642402951008" />
+    <state width="1323" height="296" key="GridCell.Tab.1.bottom" timestamp="1642402951008">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="296" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1642150136312" />
-    <state width="1323" height="296" key="GridCell.Tab.1.center" timestamp="1642150136312">
+    <state width="1323" height="296" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1642402951008" />
+    <state width="1323" height="296" key="GridCell.Tab.1.center" timestamp="1642402951008">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="296" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1642150136312" />
-    <state width="1323" height="296" key="GridCell.Tab.1.left" timestamp="1642150136312">
+    <state width="1323" height="296" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1642402951008" />
+    <state width="1323" height="296" key="GridCell.Tab.1.left" timestamp="1642402951008">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="296" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1642150136312" />
-    <state width="1323" height="296" key="GridCell.Tab.1.right" timestamp="1642150136312">
+    <state width="1323" height="296" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1642402951008" />
+    <state width="1323" height="296" key="GridCell.Tab.1.right" timestamp="1642402951008">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="296" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1642150136312" />
+    <state width="1323" height="296" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1642402951008" />
     <state width="1323" height="296" key="GridCell.Tab.2.bottom" timestamp="1641968837740">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -760,14 +767,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1323" height="296" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1641968837740" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1641968954076">
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1642150259213">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1641968954076" />
-    <state x="378" y="154" key="git4idea.merge.GitPullDialog" timestamp="1641967026477">
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1642150259213" />
+    <state x="378" y="154" key="git4idea.merge.GitPullDialog" timestamp="1642399538504">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="378" y="154" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1641967026477" />
+    <state x="378" y="154" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1642399538504" />
     <state x="57" y="0" key="new project wizard" timestamp="1641956827735">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

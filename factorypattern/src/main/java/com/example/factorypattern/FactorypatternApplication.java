@@ -1,8 +1,9 @@
 package com.example.factorypattern;
 
+import com.example.factorypattern.domain.constants.ERank;
 import com.example.factorypattern.domain.dto.Shape;
 import com.example.factorypattern.service.v3.AbsRankShapeFactory;
-import com.example.factorypattern.service.v3.NormalShapeFactory;
+import com.example.factorypattern.service.v4.StrategyContext;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -32,10 +33,20 @@ public class FactorypatternApplication implements CommandLineRunner {
         /**
          * 抽象工厂模式
          */
-        AbsRankShapeFactory shapeFactory = new NormalShapeFactory();
-        Shape circle = shapeFactory.createCircle();
-        Shape rect = shapeFactory.createRect();
-        Shape triangle = shapeFactory.createTriangle();
+//        AbsRankShapeFactory shapeFactory = new NormalShapeFactory();
+//        Shape circle = shapeFactory.createCircle();
+//        Shape rect = shapeFactory.createRect();
+//        Shape triangle = shapeFactory.createTriangle();
+
+        /**
+         * 策略模式+抽象工厂模式组合
+         * 通过在客户端给不同的枚举，返回不同的工厂类，包装了客户的创建特定工厂类的过程
+         */
+        StrategyContext strategyContext = new StrategyContext(ERank.top);
+        AbsRankShapeFactory factory = strategyContext.getFactory();
+        Shape circle = factory.createCircle();
+        Shape rect = factory.createRect();
+        Shape triangle = factory.createTriangle();
 
         System.out.println(String.format("返回:%s", (null != circle) ? circle.getDescription() : "产品空"));
         System.out.println(String.format("返回:%s", (null != rect) ? rect.getDescription() : "产品空"));
