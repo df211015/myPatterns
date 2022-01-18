@@ -42,7 +42,7 @@ public class FactorypatternApplication implements CommandLineRunner {
          * 策略模式+抽象工厂模式组合
          * 通过在客户端给不同的枚举，返回不同的工厂类，包装了客户的创建特定工厂类的过程
          */
-        StrategyContext strategyContext = new StrategyContext(ERank.top);
+        StrategyContext strategyContext = new StrategyContext(ERank.normal);
         AbsRankShapeFactory factory = strategyContext.getFactory();
         Shape circle = factory.createCircle();
         Shape rect = factory.createRect();
