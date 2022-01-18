@@ -1,0 +1,3 @@
+logging:
+  level:
+    root: error   # 将root结点内容 更新为包路径更合适
