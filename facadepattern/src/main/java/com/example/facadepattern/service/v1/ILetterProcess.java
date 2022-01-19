@@ -1,4 +1,4 @@
-package com.example.facadepattern.service;
+package com.example.facadepattern.service.v1;
 
 public interface ILetterProcess {
     //首先要写信的内容

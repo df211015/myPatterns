@@ -1,4 +1,4 @@
-package com.example.facadepattern.service;
+package com.example.facadepattern.service.v1;
 
 public class ModenPostOffice {
     private ILetterProcess letterProcess = new LetterProcessImpl();
