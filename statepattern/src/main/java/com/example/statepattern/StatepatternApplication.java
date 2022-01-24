@@ -1,6 +1,8 @@
 package com.example.statepattern;
 
+import com.example.statepattern.domain.EMyStatus;
 import com.example.statepattern.service.AutowisedTest.MyTest;
+import com.example.statepattern.service.normal.MyContext;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.Banner;
 import org.springframework.boot.CommandLineRunner;
@@ -55,7 +57,13 @@ public class StatepatternApplication implements CommandLineRunner {
 //		context.statusProcess();
 //		context.statusProcess();
 
-		String myTest = this.myTest.getMyTest();
-		String str = "";
+//		String myTest = this.myTest.getMyTest();
+//		String str = "";
+
+		MyContext context = new MyContext();
+		context.seteMyStatus(EMyStatus.STATUS_001);
+		context.operate();
+		context.operate();
+		context.operate();
 	}
 }
