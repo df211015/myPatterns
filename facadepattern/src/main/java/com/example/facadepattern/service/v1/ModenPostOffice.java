@@ -3,7 +3,7 @@ package com.example.facadepattern.service.v1;
 public class ModenPostOffice {
     private ILetterProcess letterProcess = new LetterProcessImpl();
 
-    public void sendLetter(String context,String address){
+    public void sendLetter(String context, String address) {
         //写信
         letterProcess.writeContext(context);
 
