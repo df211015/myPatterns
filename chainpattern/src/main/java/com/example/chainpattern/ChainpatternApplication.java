@@ -1,13 +1,20 @@
 package com.example.chainpattern;
 
 import com.alibaba.fastjson.JSON;
-import com.example.chainpattern.service.*;
+import com.example.chainpattern.service.dnsfirst.Recorder;
+import com.example.chainpattern.service.dnssecond.ChinaTopDnsServer;
+import com.example.chainpattern.service.dnssecond.DnsServer;
+import com.example.chainpattern.service.dnssecond.SHDnsServer;
+import com.example.chainpattern.service.dnssecond.TopDnsServer;
+import com.example.chainpattern.service.v1.*;
 import org.springframework.boot.Banner;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -68,23 +75,23 @@ public class ChainpatternApplication implements CommandLineRunner {
 //            System.out.println(recorder);
 //        }
 
-//        DnsServer sh = new SHDnsServer();
-//        DnsServer china = new ChinaTopDnsServer();
-//        DnsServer top = new TopDnsServer();
-//        sh.setUpperServer(china);
-//        china.setUpperServer(top);
-//        System.out.println("===域名解析模拟器===");
-//        while (true) {
-//            System.out.println("\n请输入域名(输入N退出):");
-//            String domain = (new BufferedReader(new InputStreamReader(System.in))).readLine();
-//            if (domain.equalsIgnoreCase("n")) {
-//                return;
-//            }
-//            Recorder recorder = new Recorder();
-//            recorder.setDomain(domain);
-//            sh.update(null, recorder);
-//            System.out.println("---DNS服务器解析结果---");
-//            System.out.println(recorder);
-//        }
+        DnsServer sh = new SHDnsServer();
+        DnsServer china = new ChinaTopDnsServer();
+        DnsServer top = new TopDnsServer();
+        sh.setUpperServer(china);
+        china.setUpperServer(top);
+        System.out.println("===域名解析模拟器===");
+        while (true) {
+            System.out.println("\n请输入域名(输入N退出):");
+            String domain = (new BufferedReader(new InputStreamReader(System.in))).readLine();
+            if (domain.equalsIgnoreCase("n")) {
+                return;
+            }
+            Recorder recorder = new Recorder();
+            recorder.setDomain(domain);
+            sh.update(null, recorder);
+            System.out.println("---DNS服务器解析结果---");
+            System.out.println(recorder);
+        }
     }
 }

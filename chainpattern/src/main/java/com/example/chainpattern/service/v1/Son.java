@@ -1,4 +1,4 @@
-package com.example.chainpattern.service;
+package com.example.chainpattern.service.v1;
 
 public class Son extends Handler {
     public Son(){

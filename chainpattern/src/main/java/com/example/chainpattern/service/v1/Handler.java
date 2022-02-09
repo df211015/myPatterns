@@ -1,4 +1,4 @@
-package com.example.chainpattern.service;
+package com.example.chainpattern.service.v1;
 
 public abstract class Handler {
     public final static Integer FATHER_LEVEL_REQUEST = 1;
