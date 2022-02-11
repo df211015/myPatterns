@@ -86,7 +86,7 @@ public class ChainpatternApplication implements CommandLineRunner {
 //            System.out.println(recorder);
 //        }
 
-        ApplyInfo applyInfo = ApplyInfo.builder().vacationDays(6).remark("申请假期处理").build();
+        ApplyInfo applyInfo = ApplyInfo.builder().vacationDays(7).remark("申请假期处理").build();
         ApplyHandler projectManager = new ProjectManager(applyInfo);
         ApplyHandler projectLeader = new ProjectLeader(applyInfo);
         projectManager.setNextHandler(projectLeader);

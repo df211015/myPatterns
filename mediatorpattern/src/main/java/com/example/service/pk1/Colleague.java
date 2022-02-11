@@ -3,7 +3,7 @@ package com.example.service.pk1;
 /**
  * 同事类
  */
-public abstract class Colleague {
+public abstract class  Colleague {
     /**
      * 中介者
      */
