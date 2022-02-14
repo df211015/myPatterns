@@ -26,5 +26,5 @@ public abstract class AbsMediator {
         }
     }
 
-    public abstract void process();
+    public abstract void process(ERentType rentType);
 }

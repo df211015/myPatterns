@@ -1,6 +1,7 @@
 package com.example;
 
-import com.example.service.pk2.*;
+import com.example.domain.ERentType;
+import com.example.service.pk3.*;
 import org.springframework.boot.Banner;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -37,14 +38,24 @@ public class MediatorpatternApplication implements CommandLineRunner {
 //        c1.send();
 //        c2.send();
 
-        Mediator mediator = new ConcreteMediator();
-        Colleague colleague1 = new ConcreteColleague1(mediator);
-        Colleague colleague2 = new ConcreteColleague2(mediator);
+//        Mediator mediator = new ConcreteMediator();
+//        Colleague colleague1 = new ConcreteColleague1(mediator);
+//        Colleague colleague2 = new ConcreteColleague2(mediator);
+//
+//        mediator.setColleague1(colleague1);
+//        mediator.setColleague2(colleague2);
+//
+//        colleague1.send("Nice to meet u.");
+//        colleague2.send("Nice to meet u too.");
 
-        mediator.setColleague1(colleague1);
-        mediator.setColleague2(colleague2);
+        AbsMediator myMediator = new MyMediator();
+        AbsColleague myColleaguesmallHouse = new MyColleague_smallHouse(myMediator);
+        AbsColleague myColleagueNormalHouse = new MyColleague_normalHouse(myMediator);
+        AbsColleague myColleagueBigHouse = new MyColleague_bigHouse(myMediator);
+        myMediator.regist(myColleaguesmallHouse,ERentType.Normal_House);
+        myMediator.regist(myColleagueNormalHouse,ERentType.Small_House);
+        myMediator.regist(myColleagueBigHouse,ERentType.Big_House);
 
-        colleague1.send("Nice to meet u.");
-        colleague2.send("Nice to meet u too.");
+        myColleagueBigHouse.selfProcess();
     }
 }

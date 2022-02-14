@@ -15,4 +15,6 @@ public abstract class AbsColleague {
     }
 
     public abstract void selfProcess();
+
+    public abstract void processOther();
 }
