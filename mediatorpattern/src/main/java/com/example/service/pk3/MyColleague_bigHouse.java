@@ -15,6 +15,6 @@ public class MyColleague_bigHouse extends AbsColleague {
 
     @Override
     public void processOther() {
-        System.out.println("处理其它!");
+        System.out.println("bigHouse,其它处理!");
     }
 }

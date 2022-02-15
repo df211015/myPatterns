@@ -52,9 +52,9 @@ public class MediatorpatternApplication implements CommandLineRunner {
         AbsColleague myColleaguesmallHouse = new MyColleague_smallHouse(myMediator);
         AbsColleague myColleagueNormalHouse = new MyColleague_normalHouse(myMediator);
         AbsColleague myColleagueBigHouse = new MyColleague_bigHouse(myMediator);
-        myMediator.regist(myColleaguesmallHouse,ERentType.Normal_House);
-        myMediator.regist(myColleagueNormalHouse,ERentType.Small_House);
-        myMediator.regist(myColleagueBigHouse,ERentType.Big_House);
+        myMediator.regist(myColleaguesmallHouse, ERentType.Normal_House);
+        myMediator.regist(myColleagueNormalHouse, ERentType.Small_House);
+        myMediator.regist(myColleagueBigHouse, ERentType.Big_House);
 
         myColleagueBigHouse.selfProcess();
     }
