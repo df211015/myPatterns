@@ -32,6 +32,7 @@ public class Composite extends Component {
 
         //下级遍历
         for (Component component : this.componentArrayList) {
+            //这里会根据不同实例的类型调用各自的display方法
             component.display(depth + 1);
         }
     }

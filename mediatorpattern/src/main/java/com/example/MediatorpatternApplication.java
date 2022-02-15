@@ -56,6 +56,6 @@ public class MediatorpatternApplication implements CommandLineRunner {
         myMediator.regist(myColleagueNormalHouse, ERentType.Normal_House);
         myMediator.regist(myColleagueBigHouse, ERentType.Big_House);
 
-        myColleaguesmallHouse.selfProcess();
+        myColleagueBigHouse.selfProcess();
     }
 }
