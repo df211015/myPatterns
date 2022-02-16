@@ -1,7 +1,5 @@
 package com.example.structdata;
 
-import com.example.structdata.service.IdGenerator;
-import com.example.structdata.service.impl.RandomIdGenerator;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -191,7 +189,20 @@ public class StructdataApplication implements CommandLineRunner {
 //            String exMsg2 = "";
 //        }
 
-        IdGenerator idGenerator = new RandomIdGenerator();
-        String generate = idGenerator.generate();
+//        IdGenerator idGenerator = new RandomIdGenerator();
+//        String generate = idGenerator.generate();
+
+//        String join = String.join("", Collections.nCopies(5, "-"));
+//        String str1 = "";
+
+//        StringBuffer sb = new StringBuffer();
+//        for (int i = 0; i < 5; i++) {
+//            sb.append("-");
+//        }
+//        String str2 = sb.toString();
+        Integer n = 5;
+        String format = String.format(String.format("%%0%s", String.format("%sd", n)), 0);
+        //String format = String.format("%05d", 0);
+        String str3 = "";
     }
 }
