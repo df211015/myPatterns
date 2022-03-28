@@ -3,6 +3,9 @@ package com.example.adapterpattern.service.instance02;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+/**
+ * 对像适配器
+ */
 @Service(value = "adapter")
 public class Adapter implements Target {
     @Autowired
@@ -10,7 +13,7 @@ public class Adapter implements Target {
 
     private Integer type;
 
-    public void setType(Integer type){
+    public void setType(Integer type) {
         this.type = type;
     }
 

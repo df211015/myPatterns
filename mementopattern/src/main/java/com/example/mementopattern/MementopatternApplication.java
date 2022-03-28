@@ -1,7 +1,7 @@
 package com.example.mementopattern;
 
-import com.example.mementopattern.service.Caretaker;
-import com.example.mementopattern.service.Originator;
+import com.example.mementopattern.service.v1.Caretaker;
+import com.example.mementopattern.service.v1.Originator;
 import org.springframework.boot.Banner;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;

@@ -2,6 +2,9 @@ package com.example.adapterpattern.service.instance02;
 
 import org.springframework.stereotype.Service;
 
+/**
+ * 类适配器
+ */
 @Service(value = "concreteTarget")
 public class ConcreteTarget implements Target {
     @Override

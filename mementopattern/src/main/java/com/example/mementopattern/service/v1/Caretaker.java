@@ -1,4 +1,4 @@
-package com.example.mementopattern.service;
+package com.example.mementopattern.service.v1;
 
 public class Caretaker {
     private Memento memento;
