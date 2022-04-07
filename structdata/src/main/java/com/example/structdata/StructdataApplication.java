@@ -1,8 +1,12 @@
 package com.example.structdata;
 
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 @SpringBootApplication
 public class StructdataApplication implements CommandLineRunner {
@@ -200,9 +204,42 @@ public class StructdataApplication implements CommandLineRunner {
 //            sb.append("-");
 //        }
 //        String str2 = sb.toString();
-        Integer n = 5;
-        String format = String.format(String.format("%%0%s", String.format("%sd", n)), 0);
-        //String format = String.format("%05d", 0);
-        String str3 = "";
+
+//        Integer n = 5;
+//        String format = String.format(String.format("%%0%s", String.format("%sd", n)), 0);
+//        //String format = String.format("%05d", 0);
+//        String str3 = "";
+
+        Integer str1 = getVerPlus("1.2.3.4");
+        System.out.println(String.format("group:%s", str1));
+
+        Integer str2 = getVerPlus("1.2.4");
+        System.out.println(String.format("group:%s", str2));
+    }
+
+    private static final String ver_partern = "(\\d+\\.\\d+\\.\\d+)(?:\\.\\d+)?";
+
+    /**
+     * 获取主版本号,仅截取主版本号数据
+     *
+     * @param strFullVersion 全版本号数据
+     * @return 主版本号
+     */
+    public static Integer getVerPlus(String strFullVersion) {
+        Pattern compile = Pattern.compile(ver_partern, Pattern.CASE_INSENSITIVE);
+        Matcher matcher = compile.matcher(strFullVersion);
+        boolean findFlag = matcher.find();
+        if (findFlag) {
+            String ver = matcher.group(1);
+            Integer iVersion = null;
+            if (StringUtils.isNotBlank(ver)) {
+                String sVer = ver.replaceAll("\\.", "");
+                iVersion = Integer.valueOf(sVer);
+            }
+
+            return iVersion;
+        }
+
+        return null;
     }
 }
