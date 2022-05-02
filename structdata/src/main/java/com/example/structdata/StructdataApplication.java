@@ -5,6 +5,11 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Arrays;
+import java.util.Date;
+import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -210,11 +215,33 @@ public class StructdataApplication implements CommandLineRunner {
 //        //String format = String.format("%05d", 0);
 //        String str3 = "";
 
-        Integer str1 = getVerPlus("1.2.3.4");
-        System.out.println(String.format("group:%s", str1));
+//        Integer str1 = getVerPlus("1.2.3.4");
+//        System.out.println(String.format("group:%s", str1));
+//
+//        Integer str2 = getVerPlus("1.2.4");
+//        System.out.println(String.format("group:%s", str2));
+//
+//        Date date = getQualityEndDate("2022-04-11");
+//        Date date2 = getQualityEndDate("2022-04-13");
+//        //在date实例的后面
+//        boolean after = date.before(date2);
+//        //在date实例的前面
+//        boolean before = date.before(date2);
+//        String str = "";
 
-        Integer str2 = getVerPlus("1.2.4");
-        System.out.println(String.format("group:%s", str2));
+//        String str = "冀B7JA07";
+//        String str2 = str.substring(0,2);
+//        String str3 = "";
+
+        String unifiedNumber = "123456";
+        List<String> strings = Arrays.asList(unifiedNumber);
+        String str = "";
+    }
+
+    public static Date getQualityEndDate(String strDate) throws ParseException {
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        Date date = simpleDateFormat.parse(strDate);
+        return date;
     }
 
     private static final String ver_partern = "(\\d+\\.\\d+\\.\\d+)(?:\\.\\d+)?";
