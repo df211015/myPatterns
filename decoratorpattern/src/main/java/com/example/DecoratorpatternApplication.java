@@ -1,9 +1,7 @@
 package com.example;
 
-import com.example.service.logisticFee.AddLogisticFee;
 import com.example.service.logisticFee.BaseDataInfo;
-import com.example.service.logisticFee.DecoratorFee;
-import com.example.service.logisticFee.SubtractLogisticFee;
+import com.example.service.mySpringframework.HelloDecorator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.Banner;
@@ -11,6 +9,8 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import javax.annotation.Resource;
 
 /**
  * Hello world!
@@ -21,6 +21,9 @@ public class DecoratorpatternApplication implements CommandLineRunner {
     @Autowired
     @Qualifier(value = "LocalLogisticFee")
     private BaseDataInfo localLogisticFee;
+
+    @Resource(name = "lowerHello")
+    private HelloDecorator lowerHello;
 
     public static void main(String[] args) {
         SpringApplication application = new SpringApplication(DecoratorpatternApplication.class);
@@ -63,8 +66,11 @@ public class DecoratorpatternApplication implements CommandLineRunner {
          * 装饰者父类继承的抽象类是为了实现继承的优点
          * 有继承的优点而又解耦合
          */
-        DecoratorFee decoratorFee = new AddLogisticFee(this.localLogisticFee);
-        decoratorFee = new SubtractLogisticFee(decoratorFee);
-        decoratorFee.process("计算物流费用");
+//        DecoratorFee decoratorFee = new AddLogisticFee(this.localLogisticFee);
+//        decoratorFee = new SubtractLogisticFee(decoratorFee);
+//        decoratorFee.process("计算物流费用");
+
+        String hello = this.lowerHello.hello();
+        String str = "";
     }
 }
