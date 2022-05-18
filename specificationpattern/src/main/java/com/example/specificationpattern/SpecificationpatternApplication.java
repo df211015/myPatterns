@@ -26,7 +26,9 @@ public class SpecificationpatternApplication implements CommandLineRunner {
         ISpecification spec2 = new BizSpecification(new Object());
 
         for (Object obj : list) {
-
+            if (spec1.and(spec2).isSatisfiedBy(obj)) {
+                System.out.println(obj);
+            }
         }
     }
 }
