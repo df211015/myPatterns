@@ -1,7 +1,7 @@
 package com.example.specificationpattern.service;
 
-public interface ISpecification {
-    boolean isSatisfiedBy(Object candidate);
+public interface ISpecification<T> {
+    boolean isSatisfiedBy(T candidate);
 
     ISpecification and(ISpecification spec);
 

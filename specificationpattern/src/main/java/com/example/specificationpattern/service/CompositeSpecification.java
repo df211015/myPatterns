@@ -4,9 +4,9 @@ import com.example.specificationpattern.service.impl.AndSpecification;
 import com.example.specificationpattern.service.impl.NotSpecification;
 import com.example.specificationpattern.service.impl.OrSpecification;
 
-public abstract class CompositeSpecification implements ISpecification {
+public abstract class CompositeSpecification<T> implements ISpecification<T> {
 
-    public abstract boolean isSatisfiedBy(Object candidate);
+    public abstract boolean isSatisfiedBy(T candidate);
 
     @Override
     public ISpecification and(ISpecification spec) {
