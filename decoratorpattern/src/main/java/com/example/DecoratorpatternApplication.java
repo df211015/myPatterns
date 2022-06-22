@@ -2,6 +2,10 @@ package com.example;
 
 import com.example.service.logisticFee.BaseDataInfo;
 import com.example.service.mySpringframework.HelloDecorator;
+import com.example.service.mysugar.ColorSugar;
+import com.example.service.mysugar.FlavorSugar;
+import com.example.service.mysugar.ISweetFood;
+import com.example.service.mysugar.MySugar;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.Banner;
@@ -70,7 +74,12 @@ public class DecoratorpatternApplication implements CommandLineRunner {
 //        decoratorFee = new SubtractLogisticFee(decoratorFee);
 //        decoratorFee.process("计算物流费用");
 
-        String hello = this.lowerHello.hello();
-        String str = "";
+//        String hello = this.lowerHello.hello();
+//        String str = "";
+
+        ISweetFood mySugar = new MySugar();
+        mySugar = new ColorSugar(mySugar);
+        mySugar = new FlavorSugar(mySugar);
+        mySugar.packageSugar("迷你棒棒糖");
     }
 }
