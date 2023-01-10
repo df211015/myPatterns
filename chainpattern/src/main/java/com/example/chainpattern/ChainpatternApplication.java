@@ -1,6 +1,8 @@
 package com.example.chainpattern;
 
+import com.alibaba.fastjson.JSON;
 import com.example.chainpattern.domain.ApplyInfo;
+import com.example.chainpattern.service.simple.*;
 import com.example.chainpattern.service.v2.ApplyHandler;
 import com.example.chainpattern.service.v2.ProjectLeader;
 import com.example.chainpattern.service.v2.ProjectManager;
@@ -9,6 +11,9 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import java.sql.SQLOutput;
+import java.util.Random;
 
 @SpringBootApplication
 public class ChainpatternApplication implements CommandLineRunner {
@@ -86,10 +91,23 @@ public class ChainpatternApplication implements CommandLineRunner {
 //            System.out.println(recorder);
 //        }
 
-        ApplyInfo applyInfo = ApplyInfo.builder().vacationDays(7).remark("申请假期处理").build();
-        ApplyHandler projectManager = new ProjectManager(applyInfo);
-        ApplyHandler projectLeader = new ProjectLeader(applyInfo);
-        projectManager.setNextHandler(projectLeader);
-        projectManager.handler();
+//        ApplyInfo applyInfo = ApplyInfo.builder().vacationDays(7).remark("申请假期处理").build();
+//        ApplyHandler projectManager = new ProjectManager(applyInfo);
+//        ApplyHandler projectLeader = new ProjectLeader(applyInfo);
+//        projectManager.setNextHandler(projectLeader);
+//        projectManager.handler();
+
+
+        //声明出所有的处理节点,以链式进行调用
+        Handler handler1 = new ConcreteHandler1();
+        Handler handler2 = new ConcreteHandler2();
+        Handler handler3 = new ConcreteHandler3();
+        handler1.setNext(handler2);
+        handler2.setNext(handler3);
+        //提交请求,返回处理结果
+        int iLevel = new Random().nextInt(4) + 1;
+        Request request = new Request(iLevel);
+        Response response = handler1.handlerMessage(request);
+        System.out.println(String.format("职责链处理结果:%s", JSON.toJSONString(response)));
     }
 }
