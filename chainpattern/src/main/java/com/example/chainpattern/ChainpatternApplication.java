@@ -105,7 +105,7 @@ public class ChainpatternApplication implements CommandLineRunner {
         handler1.setNext(handler2);
         handler2.setNext(handler3);
         //提交请求,返回处理结果
-        int iLevel = new Random().nextInt(4) + 1;
+        int iLevel = new Random().nextInt(3) + 1;
         Request request = new Request(iLevel);
         Response response = handler1.handlerMessage(request);
         System.out.println(String.format("职责链处理结果:%s", JSON.toJSONString(response)));
