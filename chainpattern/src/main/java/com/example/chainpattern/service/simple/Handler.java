@@ -8,7 +8,7 @@ public abstract class Handler {
         if (this.getHandlerLevel().equals(request.getRequestLevel())) {
             response = this.echo(request);
         } else {
-            if (this.nextHandler != null) {
+            if (null != this.nextHandler) {
                 response = this.nextHandler.handlerMessage(request);
             } else {
                 System.out.println("没有适当的处理者,业务自行处理");

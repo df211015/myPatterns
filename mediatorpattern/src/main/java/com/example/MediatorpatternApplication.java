@@ -2,6 +2,7 @@ package com.example;
 
 import com.example.domain.ERentType;
 import com.example.service.pk3.*;
+import com.example.service.simple.*;
 import org.springframework.boot.Banner;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -48,14 +49,25 @@ public class MediatorpatternApplication implements CommandLineRunner {
 //        colleague1.send("Nice to meet u.");
 //        colleague2.send("Nice to meet u too.");
 
-        AbsMediator myMediator = new MyMediator();
-        AbsColleague myColleaguesmallHouse = new MyColleague_smallHouse(myMediator);
-        AbsColleague myColleagueNormalHouse = new MyColleague_normalHouse(myMediator);
-        AbsColleague myColleagueBigHouse = new MyColleague_bigHouse(myMediator);
-        myMediator.regist(myColleaguesmallHouse, ERentType.Small_House);
-        myMediator.regist(myColleagueNormalHouse, ERentType.Normal_House);
-        myMediator.regist(myColleagueBigHouse, ERentType.Big_House);
+//        AbsMediator myMediator = new MyMediator();
+//        AbsColleague myColleaguesmallHouse = new MyColleague_smallHouse(myMediator);
+//        AbsColleague myColleagueNormalHouse = new MyColleague_normalHouse(myMediator);
+//        AbsColleague myColleagueBigHouse = new MyColleague_bigHouse(myMediator);
+//        myMediator.regist(myColleaguesmallHouse, ERentType.Small_House);
+//        myMediator.regist(myColleagueNormalHouse, ERentType.Normal_House);
+//        myMediator.regist(myColleagueBigHouse, ERentType.Big_House);
+//
+//        myColleagueBigHouse.selfProcess();
 
-        myColleagueBigHouse.selfProcess();
+        //中介者
+        Mediator mediator = new ConcreteMediator();
+        //同事类1
+        ConcreteColleague1 colleague1 = new ConcreteColleague1(mediator);
+        //同事类2
+        ConcreteColleague2 colleague2 = new ConcreteColleague2(mediator);
+        mediator.setC1(colleague1);
+        mediator.setC2(colleague2);
+
+        colleague1.depMethod1();
     }
 }
