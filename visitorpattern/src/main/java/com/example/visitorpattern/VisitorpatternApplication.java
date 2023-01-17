@@ -1,5 +1,8 @@
 package com.example.visitorpattern;
 
+import com.example.visitorpattern.service.simple.Element;
+import com.example.visitorpattern.service.simple.ObjectStruture;
+import com.example.visitorpattern.service.simple.Visitor;
 import com.example.visitorpattern.service.v2.Animal;
 import com.example.visitorpattern.service.v2.Cat;
 import com.example.visitorpattern.service.v2.IVisitor;
@@ -53,8 +56,14 @@ public class VisitorpatternApplication implements CommandLineRunner {
 //			emp.accept(new Visitor());
 //		}
 
-        Animal cat = new Cat("jimy", "cry", "it is a lovely cat!");
-        IVisitor visitor = new LocalVisitor();
-        cat.visit(visitor);
+//        Animal cat = new Cat("jimy", "cry", "it is a lovely cat!");
+//        IVisitor visitor = new LocalVisitor();
+//        cat.visit(visitor);
+
+        //元素访问者
+        for (int i = 0; i < 10; i++) {
+            Element el = ObjectStruture.createElement();
+            el.accept(new Visitor());
+        }
     }
 }
