@@ -1,7 +1,8 @@
 package com.example.compositepattern;
 
-import com.example.compositepattern.service.v2.Composite;
-import com.example.compositepattern.service.v2.Leaf;
+import com.example.compositepattern.service.simple.Component;
+import com.example.compositepattern.service.simple.Composite;
+import com.example.compositepattern.service.simple.Leaf;
 import org.springframework.boot.Banner;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -78,33 +79,57 @@ public class CompositepatternApplication implements CommandLineRunner {
 //
 //		printInfo(root);
 
-        //创建根节点及其子节点
-        Composite root = new Composite("root");
-        root.add(new Leaf("Leaf A"));
-        root.add(new Leaf("Leaf B"));
+//        //创建根节点及其子节点
+//        Composite root = new Composite("root");
+//        root.add(new Leaf("Leaf A"));
+//        root.add(new Leaf("Leaf B"));
+//
+//        //创建第二层节点及其子节点
+//        Composite branch = new Composite("Composite X");
+//        branch.add(new Leaf("Leaf XA"));
+//        branch.add(new Leaf("Leaf XB"));
+//        root.add(branch);
+//
+//        //创建第三层节点及其子节点
+//        Composite branch2 = new Composite("Composite XY");
+//        branch2.add(new Leaf("Leaf XYA"));
+//        branch2.add(new Leaf("Leaf XYB"));
+//        branch.add(branch2);
+//
+//        //创建第二层节点
+//        root.add(new Leaf("Leaf C"));
+//
+//        //创建第二层节点并删除
+//        Leaf leaf = new Leaf("Leaf D");
+//        root.add(leaf);
+//        root.remove(leaf);
+//
+//        //打印
+//        root.display(1);
 
-        //创建第二层节点及其子节点
-        Composite branch = new Composite("Composite X");
-        branch.add(new Leaf("Leaf XA"));
-        branch.add(new Leaf("Leaf XB"));
+        /**
+         * 实现组合模式示例
+         */
+        Composite root = new Composite();
+        root.doSomething();
+
+        Composite branch = new Composite();
+        Leaf leaf = new Leaf();
+
         root.add(branch);
+        branch.add(leaf);
 
-        //创建第三层节点及其子节点
-        Composite branch2 = new Composite("Composite XY");
-        branch2.add(new Leaf("Leaf XYA"));
-        branch2.add(new Leaf("Leaf XYB"));
-        branch.add(branch2);
+        display(root);
+    }
 
-        //创建第二层节点
-        root.add(new Leaf("Leaf C"));
-
-        //创建第二层节点并删除
-        Leaf leaf = new Leaf("Leaf D");
-        root.add(leaf);
-        root.remove(leaf);
-
-        //打印
-        root.display(1);
+    private static void display(Component component) {
+        for (Component item : component.getChildren()) {
+            if (item instanceof Leaf) {
+                item.doSomething();
+            } else {
+                display(item);
+            }
+        }
     }
 
 //	private void printInfo(Branch root){
