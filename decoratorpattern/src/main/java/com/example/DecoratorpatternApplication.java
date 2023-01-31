@@ -6,6 +6,10 @@ import com.example.service.mysugar.ColorSugar;
 import com.example.service.mysugar.FlavorSugar;
 import com.example.service.mysugar.ISweetFood;
 import com.example.service.mysugar.MySugar;
+import com.example.service.simple.Component;
+import com.example.service.simple.ConcreteComponent;
+import com.example.service.simple.ConcreteComponent1;
+import com.example.service.simple.ConcreteComponent2;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.Banner;
@@ -77,9 +81,17 @@ public class DecoratorpatternApplication implements CommandLineRunner {
 //        String hello = this.lowerHello.hello();
 //        String str = "";
 
-        ISweetFood mySugar = new MySugar();
-        mySugar = new ColorSugar(mySugar);
-        mySugar = new FlavorSugar(mySugar);
-        mySugar.packageSugar("迷你棒棒糖");
+//        ISweetFood mySugar = new MySugar();
+//        mySugar = new ColorSugar(mySugar);
+//        mySugar = new FlavorSugar(mySugar);
+//        mySugar.packageSugar("迷你棒棒糖");
+
+        /**
+         * 装饰模式示例
+         */
+        Component component = new ConcreteComponent();
+        component = new ConcreteComponent1(component);
+        component = new ConcreteComponent2(component);
+        component.operate();
     }
 }
