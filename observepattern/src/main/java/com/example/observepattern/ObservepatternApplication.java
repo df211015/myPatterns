@@ -1,6 +1,9 @@
 package com.example.observepattern;
 
 import com.example.observepattern.service.lottery.LotteryServiceImpl;
+import com.example.observepattern.service.simple.ConcreteObserver;
+import com.example.observepattern.service.simple.ConcreteSubject;
+import com.example.observepattern.service.simple.Observer;
 import org.springframework.boot.Banner;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -42,7 +45,15 @@ public class ObservepatternApplication implements CommandLineRunner {
 //
 //		myRing.playRing();
 
-        LotteryServiceImpl lotteryService = new LotteryServiceImpl();
-        lotteryService.draw("87574");
+//        LotteryServiceImpl lotteryService = new LotteryServiceImpl();
+//        lotteryService.draw("87574");
+
+        /**
+         * 观察者模式demo
+         */
+        ConcreteSubject subject = new ConcreteSubject();
+        Observer observer = new ConcreteObserver();
+        subject.addObserver(observer);
+        subject.doSomething();
     }
 }
