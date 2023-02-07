@@ -2,7 +2,8 @@ package com.example.flyweightpattern;
 
 import com.example.flyweightpattern.service.instance03.Captcha;
 import com.example.flyweightpattern.service.instance03.CaptchaArgs;
-import com.example.flyweightpattern.service.instance03.FlyweightFactory;
+import com.example.flyweightpattern.service.simple.Flyweight;
+import com.example.flyweightpattern.service.simple.FlyweightFactory;
 import org.springframework.boot.Banner;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -35,15 +36,19 @@ public class FlyweightpatternApplication implements CommandLineRunner {
 //        f11.operation(new UnsharedConcreteFlyweight("第1次调用b"));
 //        f12.operation(new UnsharedConcreteFlyweight("第2次调用b"));
 
-        FlyweightFactory flyweightFactory = new FlyweightFactory();
-        //获取一个正常验证码
-        Captcha captcha = flyweightFactory.getCaptcha(0);
-        // 生成一个长宽为120且简单的正常验证码
-        captcha.product(new CaptchaArgs(120,120,"简单"));
-        //获取一个计算型验证码
-        captcha = flyweightFactory.getCaptcha(1);
-        // 生成一个长宽为200且复杂的计算型验证码
-        captcha.product(new CaptchaArgs(200,200,"复杂"));
-
+//        FlyweightFactory flyweightFactory = new FlyweightFactory();
+//        //获取一个正常验证码
+//        Captcha captcha = flyweightFactory.getCaptcha(0);
+//        // 生成一个长宽为120且简单的正常验证码
+//        captcha.product(new CaptchaArgs(120,120,"简单"));
+//        //获取一个计算型验证码
+//        captcha = flyweightFactory.getCaptcha(1);
+//        // 生成一个长宽为200且复杂的计算型验证码
+//        captcha.product(new CaptchaArgs(200,200,"复杂"));
+        /**
+         * 根据外部状态获取享元对像,示例聚集享元的处理,享元模式demo
+         */
+        String extrinsic = "科目1考试地点1";
+        Flyweight flyweight = FlyweightFactory.getFlyweight(extrinsic);
     }
 }
