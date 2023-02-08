@@ -36,7 +36,7 @@ public class BuilderpatternApplication implements CommandLineRunner {
 //		String specialTalent = adultSuperMan.getSpecialTalent();
 //		System.out.println(String.format("超人信息:%s",specialTalent));
 
-        MyDirector myDirector = new MyDirector();
+//        MyDirector myDirector = new MyDirector();
 //		MyBuilder myBuilder = new MyBuilder01();
 //		myBuilder.setAge(18);
 //		myBuilder.setName("aaa");
