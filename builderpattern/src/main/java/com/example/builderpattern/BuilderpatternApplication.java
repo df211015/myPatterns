@@ -48,6 +48,9 @@ public class BuilderpatternApplication implements CommandLineRunner {
 //
 //		String str = "";
 
+        /**
+         * 建造者模式演示demo
+         */
         Director director = new Director();
         director.getProduct();
 
