@@ -1,4 +1,4 @@
-package com.example.bridgepattern.filminfo;
+package com.example.bridgepattern.service.filminfo;
 
 public abstract class AbstractStar {
     protected final AbstractAction action;

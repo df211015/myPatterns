@@ -1,9 +1,13 @@
 package com.example.bridgepattern;
 
-import com.example.bridgepattern.filminfo.AbstractStar;
-import com.example.bridgepattern.filminfo.ActFilm;
-import com.example.bridgepattern.filminfo.FilmStar;
-import com.example.bridgepattern.filminfo.Singer;
+import com.example.bridgepattern.service.filminfo.AbstractStar;
+import com.example.bridgepattern.service.filminfo.ActFilm;
+import com.example.bridgepattern.service.filminfo.FilmStar;
+import com.example.bridgepattern.service.filminfo.Singer;
+import com.example.bridgepattern.service.simple.Abstraction;
+import com.example.bridgepattern.service.simple.ConcreteImplementor1;
+import com.example.bridgepattern.service.simple.Implementor;
+import com.example.bridgepattern.service.simple.RefinedAbstraction;
 import org.springframework.boot.Banner;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -28,13 +32,20 @@ public class BridgepatternApplication implements CommandLineRunner {
 //		ShanZhaiCorp shanZaiCorp = new ShanZhaiCorp(new IPod());
 //		shanZaiCorp.makeMoney();
 
-		AbstractStar filmStar = new FilmStar();
-		filmStar.doJob();
+//		AbstractStar filmStar = new FilmStar();
+//		filmStar.doJob();
+//
+//		AbstractStar singer = new Singer();
+//		singer.doJob();
+//
+//		AbstractStar singerExt = new Singer(new ActFilm());
+//		singerExt.doJob();
 
-		AbstractStar singer = new Singer();
-		singer.doJob();
-
-		AbstractStar singerExt = new Singer(new ActFilm());
-		singerExt.doJob();
+		/**
+		 * 桥梁模式示例demo
+		 */
+		Implementor imp = new ConcreteImplementor1();
+		Abstraction abs = new RefinedAbstraction(imp);
+		abs.request();
 	}
 }

@@ -1,4 +1,4 @@
-package com.example.bridgepattern.filminfo;
+package com.example.bridgepattern.service.filminfo;
 
 public class Sing extends AbstractAction {
     @Override

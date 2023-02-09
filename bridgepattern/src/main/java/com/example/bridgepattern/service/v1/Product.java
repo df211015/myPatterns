@@ -1,4 +1,4 @@
-package com.example.bridgepattern.service;
+package com.example.bridgepattern.service.v1;
 
 public abstract class Product {
     //生产

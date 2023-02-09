@@ -1,4 +1,4 @@
-package com.example.bridgepattern.service;
+package com.example.bridgepattern.service.v1;
 
 public class HouseCorp extends Corp {
     public HouseCorp(Product product) {
