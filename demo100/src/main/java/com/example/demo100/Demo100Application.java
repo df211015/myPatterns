@@ -49,17 +49,20 @@ public class Demo100Application {
         //{"token":"5a390bb60e0a4699812c1e568d14d443","env":"test","sysCode":"app","authorization":"5a390bb60e0a4699812c1e568d14d443","accountId":null,"dealerId":null,"tcDealerId":null}
 //		DealerAccountVo userInfoByToten = PermissionUtils.getUserInfoByToten("test", "5a390bb60e0a4699812c1e568d14d443", "app");
 
-        Calendar calendar = Calendar.getInstance();
-        calendar.setTime(new java.util.Date());
-        calendar.add(Calendar.DATE, -21);
-        calendar.set(calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH), calendar.get(Calendar.DAY_OF_MONTH), 0, 0, 0);
-        Date time = calendar.getTime();
+//        Calendar calendar = Calendar.getInstance();
+//        calendar.setTime(new java.util.Date());
+//        calendar.add(Calendar.DATE, -21);
+//        calendar.set(calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH), calendar.get(Calendar.DAY_OF_MONTH), 0, 0, 0);
+//        Date time = calendar.getTime();
+//
+//        calendar.set(calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH), 20, 0, 0, 0);
+//        Date time2 = calendar.getTime();
+//
+//        boolean after = time.after(time2);
+//        boolean before = time.before(time2);
 
-        calendar.set(calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH), 20, 0, 0, 0);
-        Date time2 = calendar.getTime();
-
-        boolean after = time.after(time2);
-        boolean before = time.before(time2);
+        Integer status = 40;
+        boolean contains = Arrays.asList(40, 50).contains(status);
 
         String str = "";
     }
