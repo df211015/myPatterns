@@ -1,4 +1,4 @@
-package com.example.strategypattern.service;
+package com.example.strategypattern.service.v1;
 
 public class BlockEnemy implements IStrategy {
     @Override
