@@ -1,6 +1,8 @@
 package com.example.prototypepattern;
 
+import com.alibaba.fastjson.JSON;
 import com.example.prototypepattern.servrice.instance02.ConcretePrototype;
+import com.example.prototypepattern.servrice.simple.Thing;
 import org.springframework.boot.Banner;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -29,10 +31,20 @@ public class PrototypepatternApplication implements CommandLineRunner {
 //        List myLst3 = thing2.getArrayList();
 //        String str = "";
 
-        ConcretePrototype cp = new ConcretePrototype();
-        for (int i = 0; i < 10; i++) {
-            ConcretePrototype clonecp = (ConcretePrototype) cp.clone();
-            clonecp.show();
-        }
+//        ConcretePrototype cp = new ConcretePrototype();
+//        for (int i = 0; i < 10; i++) {
+//            ConcretePrototype clonecp = (ConcretePrototype) cp.clone();
+//            clonecp.show();
+//        }
+        /**
+         * 原型模式demo示例
+         */
+        Thing thing = new Thing();
+        thing.setValue("test01");
+        System.out.println(String.format("arrayList01:%s", JSON.toJSONString(thing.getValue())));
+
+        Thing clone = thing.clone();
+        clone.setValue("test02");
+        System.out.println(String.format("arrayList02:%s", JSON.toJSONString(thing.getValue())));
     }
 }
