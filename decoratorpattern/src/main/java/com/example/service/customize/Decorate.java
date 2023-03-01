@@ -1,6 +1,6 @@
 package com.example.service.customize;
 
-public abstract class Decorate extends AbsWatch {
+public class Decorate extends AbsWatch {
     private AbsWatch watch;
 
     public Decorate(AbsWatch watch) {
