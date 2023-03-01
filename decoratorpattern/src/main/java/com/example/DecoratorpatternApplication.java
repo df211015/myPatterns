@@ -1,5 +1,9 @@
 package com.example;
 
+import com.example.service.customize.AbsWatch;
+import com.example.service.customize.ColorDecorate;
+import com.example.service.customize.FilmingDecorate;
+import com.example.service.customize.Garmin;
 import com.example.service.logisticFee.BaseDataInfo;
 import com.example.service.mySpringframework.HelloDecorator;
 import com.example.service.mysugar.ColorSugar;
@@ -87,11 +91,19 @@ public class DecoratorpatternApplication implements CommandLineRunner {
 //        mySugar.packageSugar("迷你棒棒糖");
 
         /**
-         * 装饰模式示例
+         * 装饰模式示例demo
          */
-        Component component = new ConcreteComponent();
-        component = new ConcreteComponent1(component);
-        component = new ConcreteComponent2(component);
-        component.operate();
+//        Component component = new ConcreteComponent();
+//        component = new ConcreteComponent1(component);
+//        component = new ConcreteComponent2(component);
+//        component.operate();
+        /**
+         * 重写装饰者模式示例
+         * 以佳明手表为场景,分别进行颜色和贴膜的装饰
+         */
+        AbsWatch watch = new Garmin();
+        AbsWatch colorDecorate = new ColorDecorate(watch);
+        AbsWatch filmingDecorate = new FilmingDecorate(colorDecorate);
+        filmingDecorate.displayTime();
     }
 }
