@@ -5,6 +5,9 @@ import com.example.factorypattern.domain.dto.GreekPizza;
 import com.example.factorypattern.domain.dto.PepperPizza;
 import com.example.factorypattern.domain.dto.Pizza;
 
+/**
+ * 按城市维度+产品线抽象
+ */
 public class BJPizzaFactory extends AbsProductFactory{
     @Override
     public Pizza createCheesePizza() {
