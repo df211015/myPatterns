@@ -5,7 +5,7 @@ import com.example.factorypattern.domain.dto.GreekPizza;
 import com.example.factorypattern.domain.dto.PepperPizza;
 import com.example.factorypattern.domain.dto.Pizza;
 
-public class BJPizzaFactory extends AbsProductFactory{
+public class WHPizzaFactory extends AbsProductFactory {
     @Override
     public Pizza createCheesePizza() {
         return new CheesePizza();
