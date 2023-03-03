@@ -1,5 +1,9 @@
 package com.example.bridgepattern;
 
+import com.example.bridgepattern.service.customize.AbsFatherRequest;
+import com.example.bridgepattern.service.customize.AbsSonResponse;
+import com.example.bridgepattern.service.customize.FatherRequest;
+import com.example.bridgepattern.service.customize.SecondSonResponse;
 import com.example.bridgepattern.service.filminfo.AbstractStar;
 import com.example.bridgepattern.service.filminfo.ActFilm;
 import com.example.bridgepattern.service.filminfo.FilmStar;
@@ -44,8 +48,12 @@ public class BridgepatternApplication implements CommandLineRunner {
 		/**
 		 * 桥梁模式示例demo
 		 */
-		Implementor imp = new ConcreteImplementor1();
-		Abstraction abs = new RefinedAbstraction(imp);
-		abs.request();
+//		Implementor imp = new ConcreteImplementor1();
+//		Abstraction abs = new RefinedAbstraction(imp);
+//		abs.request();
+
+		AbsSonResponse sonResponse = new SecondSonResponse();
+		AbsFatherRequest fatherRequest = new FatherRequest(sonResponse);
+		fatherRequest.sonResponseProcess();
 	}
 }
