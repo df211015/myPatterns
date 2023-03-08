@@ -1,14 +1,15 @@
 package com.example.observepattern;
 
-import com.example.observepattern.service.lottery.LotteryServiceImpl;
-import com.example.observepattern.service.simple.ConcreteObserver;
-import com.example.observepattern.service.simple.ConcreteSubject;
-import com.example.observepattern.service.simple.Observer;
+import com.example.observepattern.service.customize.MyObserver1;
+import com.example.observepattern.service.customize.MyObserver2;
+import com.example.observepattern.service.customize.MySubject;
 import org.springframework.boot.Banner;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import java.util.Observer;
 
 @SpringBootApplication
 public class ObservepatternApplication implements CommandLineRunner {
@@ -51,9 +52,19 @@ public class ObservepatternApplication implements CommandLineRunner {
         /**
          * 观察者模式demo
          */
-        ConcreteSubject subject = new ConcreteSubject();
-        Observer observer = new ConcreteObserver();
-        subject.addObserver(observer);
-        subject.doSomething();
+//        ConcreteSubject subject = new ConcreteSubject();
+//        Observer observer = new ConcreteObserver();
+//        subject.addObserver(observer);
+//        subject.doSomething();
+
+        /**
+         * 观察者模式
+         */
+        Observer observer1 = new MyObserver1();
+        Observer observer2 = new MyObserver2();
+        MySubject subject = new MySubject();
+        subject.addObserver(observer1);
+        subject.addObserver(observer2);
+        subject.notifyObservers("hello");
     }
 }
