@@ -78,13 +78,10 @@ public class MediatorpatternApplication implements CommandLineRunner {
          * 中介者模式demo
          */
         AbsMediator mediator = new NormalMediator();
-        ColleagueOfLandlady landlady = new ColleagueOfLandlady();
-        ColleagueOfTenant tenant = new ColleagueOfTenant();
-        landlady.setMediator(mediator);
-        tenant.setMediator(mediator);
+        ColleagueOfLandlady landlady = new ColleagueOfLandlady(mediator);
+        ColleagueOfTenant tenant = new ColleagueOfTenant(mediator);
         mediator.setLandlady(landlady);
         mediator.setTenant(tenant);
         tenant.rent();
-        tenant.getMediator().interruptLandlady();
     }
 }
