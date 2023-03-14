@@ -1,6 +1,10 @@
 package com.example;
 
 import com.example.domain.ERentType;
+import com.example.service.customize.AbsMediator;
+import com.example.service.customize.ColleagueOfLandlady;
+import com.example.service.customize.ColleagueOfTenant;
+import com.example.service.customize.NormalMediator;
 import com.example.service.pk3.*;
 import com.example.service.simple.*;
 import org.springframework.boot.Banner;
@@ -59,15 +63,28 @@ public class MediatorpatternApplication implements CommandLineRunner {
 //
 //        myColleagueBigHouse.selfProcess();
 
-        //中介者
-        Mediator mediator = new ConcreteMediator();
-        //同事类1
-        ConcreteColleague1 colleague1 = new ConcreteColleague1(mediator);
-        //同事类2
-        ConcreteColleague2 colleague2 = new ConcreteColleague2(mediator);
-        mediator.setC1(colleague1);
-        mediator.setC2(colleague2);
+//        //中介者
+//        Mediator mediator = new ConcreteMediator();
+//        //同事类1
+//        ConcreteColleague1 colleague1 = new ConcreteColleague1(mediator);
+//        //同事类2
+//        ConcreteColleague2 colleague2 = new ConcreteColleague2(mediator);
+//        mediator.setC1(colleague1);
+//        mediator.setC2(colleague2);
+//
+//        colleague1.depMethod1();
 
-        colleague1.depMethod1();
+        /**
+         * 中介者模式demo
+         */
+        AbsMediator mediator = new NormalMediator();
+        ColleagueOfLandlady landlady = new ColleagueOfLandlady();
+        ColleagueOfTenant tenant = new ColleagueOfTenant();
+        landlady.setMediator(mediator);
+        tenant.setMediator(mediator);
+        mediator.setLandlady(landlady);
+        mediator.setTenant(tenant);
+        tenant.rent();
+        tenant.getMediator().interruptLandlady();
     }
 }
