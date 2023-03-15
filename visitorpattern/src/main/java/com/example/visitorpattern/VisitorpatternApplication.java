@@ -1,5 +1,9 @@
 package com.example.visitorpattern;
 
+import com.example.visitorpattern.service.customize.ElementPlus;
+import com.example.visitorpattern.service.customize.HeadmasterVistor;
+import com.example.visitorpattern.service.customize.IVisitorPlus;
+import com.example.visitorpattern.service.customize.ParentVistor;
 import com.example.visitorpattern.service.simple.Element;
 import com.example.visitorpattern.service.simple.ObjectStruture;
 import com.example.visitorpattern.service.simple.Visitor;
@@ -61,9 +65,23 @@ public class VisitorpatternApplication implements CommandLineRunner {
 //        cat.visit(visitor);
 
         //元素访问者
-        for (int i = 0; i < 10; i++) {
-            Element el = ObjectStruture.createElement();
-            el.accept(new Visitor());
-        }
+//        for (int i = 0; i < 10; i++) {
+//            Element el = ObjectStruture.createElement();
+//            el.accept(new Visitor());
+//        }
+
+        /**
+         * 访问者模式,以被访问的元素作为基础,accept方法在元素内部;如果没有accept方法则
+         * 直接演变成了策略模式
+         */
+        ElementPlus element1 = new ElementPlus();
+        element1.setName("aaa");
+        element1.setLevel("一级");
+        element1.setScore(90d);
+        //访问者1
+        IVisitorPlus visitor1 = new HeadmasterVistor();
+        //访问者2
+        IVisitorPlus visitor2 = new ParentVistor();
+        element1.accept(visitor1);
     }
 }
