@@ -1,6 +1,7 @@
 package com.example.interpreter;
 
-import com.example.interpreter.service.CalculatorPlus;
+import com.example.interpreter.service.simple.Calculator;
+import com.example.interpreter.service.v1.CalculatorPlus;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -25,9 +26,11 @@ public class InterpreterApplication implements CommandLineRunner {
         //赋值
         HashMap<String, Integer> mapVar = getValue(expStr);
 
-//        Calculator cal = new Calculator(expStr);
+        //普通版本,支持加减法
+        Calculator cal = new Calculator(expStr);
+
         //加强版,支持括号
-        CalculatorPlus cal = new CalculatorPlus(expStr);
+//        CalculatorPlus cal = new CalculatorPlus(expStr);
         System.out.println("运算结果为：" + expStr + "=" + cal.run(mapVar));
     }
 
