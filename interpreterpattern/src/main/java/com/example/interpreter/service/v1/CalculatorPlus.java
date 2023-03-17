@@ -8,6 +8,9 @@ import java.util.List;
 import java.util.Stack;
 import java.util.stream.Collectors;
 
+/**
+ * 带括号的四则运算构建器
+ */
 public class CalculatorPlus {
     //构建语法树
     private Expression expression;
