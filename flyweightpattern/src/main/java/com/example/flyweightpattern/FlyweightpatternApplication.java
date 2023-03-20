@@ -1,9 +1,8 @@
 package com.example.flyweightpattern;
 
-import com.example.flyweightpattern.service.instance03.Captcha;
-import com.example.flyweightpattern.service.instance03.CaptchaArgs;
-import com.example.flyweightpattern.service.simple.Flyweight;
-import com.example.flyweightpattern.service.simple.FlyweightFactory;
+import com.example.flyweightpattern.service.customize.UnsharedConcreteFlyweight;
+import com.example.flyweightpattern.service.customize.Flyweight;
+import com.example.flyweightpattern.service.customize.FlyweightFactory;
 import org.springframework.boot.Banner;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -48,7 +47,18 @@ public class FlyweightpatternApplication implements CommandLineRunner {
         /**
          * 根据外部状态获取享元对像,示例聚集享元的处理,享元模式demo
          */
-        String extrinsic = "科目1考试地点1";
-        Flyweight flyweight = FlyweightFactory.getFlyweight(extrinsic);
+//        String extrinsic = "科目1考试地点1";
+//        Flyweight flyweight = FlyweightFactory.getFlyweight(extrinsic);
+
+        /**
+         * 享元模式demo
+         */
+        FlyweightFactory factory = new FlyweightFactory();
+        Flyweight f01 = factory.getFlyweight("a");
+        Flyweight f02 = factory.getFlyweight("a");
+        Flyweight f03 = factory.getFlyweight("a");
+        f01.operation(new UnsharedConcreteFlyweight("第1次调用a."));
+        f02.operation(new UnsharedConcreteFlyweight("第2次调用a."));
+        f03.operation(new UnsharedConcreteFlyweight("第3次调用a."));
     }
 }
