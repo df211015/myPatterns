@@ -51,7 +51,7 @@ public class FlyweightpatternApplication implements CommandLineRunner {
 //        Flyweight flyweight = FlyweightFactory.getFlyweight(extrinsic);
 
         /**
-         * 享元模式demo
+         * 享元模式demo,该示例讲清楚了享元与非享元的关系
          */
         FlyweightFactory factory = new FlyweightFactory();
         Flyweight f01 = factory.getFlyweight("a");
