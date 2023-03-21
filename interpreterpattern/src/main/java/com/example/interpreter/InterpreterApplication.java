@@ -1,5 +1,9 @@
 package com.example.interpreter;
 
+import com.example.interpreter.service.customize.AndExpression;
+import com.example.interpreter.service.customize.Expression;
+import com.example.interpreter.service.customize.OrExpression;
+import com.example.interpreter.service.customize.TerminalExpression;
 import com.example.interpreter.service.simple.Calculator;
 import com.example.interpreter.service.v1.CalculatorPlus;
 import org.apache.commons.lang.StringUtils;
@@ -22,16 +26,43 @@ public class InterpreterApplication implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         System.out.println("程序启动成功!");
-        String expStr = getExpStr();
-        //赋值
-        HashMap<String, Integer> mapVar = getValue(expStr);
 
-        //普通版本,支持加减法
-        Calculator cal = new Calculator(expStr);
+        /**
+         * String expStr = getExpStr();
+         //赋值
+         HashMap<String, Integer> mapVar = getValue(expStr);
+         //普通版本,支持加减法
+         Calculator cal = new Calculator(expStr);
 
-        //加强版,支持括号
-//        CalculatorPlus cal = new CalculatorPlus(expStr);
-        System.out.println("运算结果为：" + expStr + "=" + cal.run(mapVar));
+         //加强版,支持括号
+         //        CalculatorPlus cal = new CalculatorPlus(expStr);
+         System.out.println("运算结果为：" + expStr + "=" + cal.run(mapVar));
+         **/
+
+        /**
+         * 通过设置不同的规则,应用时解析相应的规则
+         */
+        Expression goodStudent = getMGoodStudentExpression();
+        Expression hobby = getHobbyExpression();
+        System.out.println("zhangshan是个三好学生么? " + goodStudent.interpret("zhangshan"));
+        System.out.println("wangwu like music? " + hobby.interpret("wangwu hate music"));
+    }
+
+    //规则1：zhangshan 和 lisi 都是三好学生
+    public static Expression getMGoodStudentExpression() {
+        Expression zhangshan = new TerminalExpression("zhangshan");
+        Expression lisi = new TerminalExpression("lisi");
+        return new OrExpression(zhangshan, lisi);
+    }
+
+    //规则2：wangwu like music
+    public static Expression getHobbyExpression() {
+        Expression wangwu = new TerminalExpression("wangwu");
+        Expression like = new TerminalExpression("like");
+        Expression music = new TerminalExpression("music");
+        AndExpression andExpression = new AndExpression(wangwu, like);
+        AndExpression andExpressionFinal = new AndExpression(andExpression, music);
+        return andExpressionFinal;
     }
 
     /**
@@ -58,7 +89,7 @@ public class InterpreterApplication implements CommandLineRunner {
         HashMap<String, Integer> map = new HashMap<String, Integer>();
         //解析有几个参数要传递
         for (char ch : exprStr.toCharArray()) {
-            if(StringUtils.isNotBlank(String.valueOf(ch))) {
+            if (StringUtils.isNotBlank(String.valueOf(ch))) {
                 if (ch != '+' && ch != '-' && ch != '*' && ch != '/' && ch != '(' && ch != ')') {
                     //解决重复参数的问题
                     if (!map.containsKey(String.valueOf(ch))) {
