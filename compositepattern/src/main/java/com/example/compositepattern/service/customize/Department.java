@@ -7,6 +7,6 @@ public class Department extends OrganizationComponent {
 
     @Override
     public void print() {
-        System.out.println(super.getName());
+        System.out.println(String.format("--- %s", super.getName()));
     }
 }
