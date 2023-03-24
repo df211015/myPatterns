@@ -35,12 +35,16 @@ public class MementopatternApplication implements CommandLineRunner {
         //发起人角色进行数据变更
         Originator originatorPlus = new Originator();
         originatorPlus.setData("第一次初始化");
+        System.out.println(String.format("Originator -> data:%s", originatorPlus.getData()));
         Memento mementoFirst = originatorPlus.createMemento();
+        originatorPlus.setData("第二次初始化");
+        System.out.println(String.format("Originator -> data:%s", originatorPlus.getData()));
         //负责人角色进行备忘录管理
         Caretaker caretakerPlus = new Caretaker();
         caretakerPlus.addMemento(mementoFirst);
         //负责人角色选择备忘录
         Memento lastMemento = caretakerPlus.getLastMemento();
         originatorPlus.recover(lastMemento);
+        System.out.println(String.format("恢复后的Originator -> data:%s", originatorPlus.getData()));
     }
 }
