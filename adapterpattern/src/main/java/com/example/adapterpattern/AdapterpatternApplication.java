@@ -1,6 +1,6 @@
 package com.example.adapterpattern;
 
-import com.example.adapterpattern.service.simple.Adapter;
+import com.example.adapterpattern.service.customize.*;
 import com.example.adapterpattern.service.simple.ConcreteTarget;
 import com.example.adapterpattern.service.simple.Target;
 import org.springframework.boot.Banner;
@@ -46,11 +46,20 @@ public class AdapterpatternApplication implements CommandLineRunner {
          * 适配器模式demo示例
          */
         //原有的业务逻辑
-        Target target = new ConcreteTarget();
-        target.request();
+//        Target target = new ConcreteTarget();
+//        target.request();
+//        //增加了适配器角色后的处理
+//        Target target2 = new Adapter();
+//        target2.request();
 
-        //增加了适配器角色后的处理
-        Target target2 = new Adapter();
-        target2.request();
+        /**
+         * 适配器模式demo
+         * 在适配器里用IOtherSport适配成ISport
+         */
+        ISport taocheFootball = new TaocheFootball();
+        taocheFootball.sport();
+        IOtherSport taocheBasketball = new TaocheBasketball();
+        ISport adapter = new Adapter(taocheBasketball);
+        adapter.sport();
     }
 }
