@@ -1,4 +1,4 @@
-package com.example.pattern.templatepattern.service;
+package com.example.pattern.templatepattern.service.v1;
 
 public abstract class Template {
     public abstract void print(String msg);
