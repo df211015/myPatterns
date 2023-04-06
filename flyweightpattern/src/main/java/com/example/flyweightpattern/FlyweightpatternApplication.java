@@ -52,7 +52,7 @@ public class FlyweightpatternApplication implements CommandLineRunner {
 
         /**
          * 享元模式demo,该示例讲清楚了享元与非享元的关系
-         * 该模式主要解决大对像的问题
+         * 该模式主要解决大对像的问题,将可以外部化的对像设计成共享方式,可以优化内存的占有率
          */
         FlyweightFactory factory = new FlyweightFactory();
         Flyweight f01 = factory.getFlyweight("a");
