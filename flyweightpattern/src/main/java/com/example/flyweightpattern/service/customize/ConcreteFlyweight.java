@@ -10,6 +10,6 @@ public class ConcreteFlyweight implements Flyweight {
 
     @Override
     public void operation(UnsharedConcreteFlyweight outState) {
-        System.out.println(String.format("具体享元:%s,被调用,非享元信息是:%s", key, outState.getInfo()));
+        System.out.println(String.format("具体享元:%s,被调用,非享元信息是:%s", this.key, outState.getInfo()));
     }
 }

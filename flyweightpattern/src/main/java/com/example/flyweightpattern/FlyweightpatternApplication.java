@@ -52,6 +52,7 @@ public class FlyweightpatternApplication implements CommandLineRunner {
 
         /**
          * 享元模式demo,该示例讲清楚了享元与非享元的关系
+         * 该模式主要解决大对像的问题
          */
         FlyweightFactory factory = new FlyweightFactory();
         Flyweight f01 = factory.getFlyweight("a");
