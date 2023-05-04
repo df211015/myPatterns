@@ -14,6 +14,7 @@ import com.example.service.simple.Component;
 import com.example.service.simple.ConcreteComponent;
 import com.example.service.simple.ConcreteComponent1;
 import com.example.service.simple.ConcreteComponent2;
+import com.example.service.v1.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.Banner;
@@ -101,9 +102,21 @@ public class DecoratorpatternApplication implements CommandLineRunner {
          * 重写装饰者模式示例
          * 以佳明手表为场景,分别进行颜色和贴膜的装饰
          */
-        AbsWatch watch = new Garmin();
-        AbsWatch colorDecorate = new ColorDecorate(watch);
-        AbsWatch filmingDecorate = new FilmingDecorate(colorDecorate);
-        filmingDecorate.displayTime();
+//        AbsWatch watch = new Garmin();
+//        AbsWatch colorDecorate = new ColorDecorate(watch);
+//        AbsWatch filmingDecorate = new FilmingDecorate(colorDecorate);
+//        filmingDecorate.displayTime();
+
+        /**
+         * 芒果双份柠檬红茶
+         * 通过装饰模式实现,装饰类部分可以根据实际业务需求追加
+         */
+        Beverage beverage = new RedTea();
+        beverage = new Mango(beverage);
+        beverage = new Mango(beverage);
+        beverage = new Lemon(beverage);
+        String description = beverage.getDescription();
+        Double cost = beverage.cost();
+        System.out.println(String.format("饮料信息,名称:%s,价格:%s", description, cost));
     }
 }
