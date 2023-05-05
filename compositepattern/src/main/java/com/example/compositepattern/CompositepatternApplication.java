@@ -7,6 +7,9 @@ import com.example.compositepattern.service.customize.University;
 import com.example.compositepattern.service.simple.Component;
 import com.example.compositepattern.service.simple.Composite;
 import com.example.compositepattern.service.simple.Leaf;
+import com.example.compositepattern.service.v3.BaseComponent;
+import com.example.compositepattern.service.v3.Function;
+import com.example.compositepattern.service.v3.Menu;
 import org.springframework.boot.Banner;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -129,24 +132,33 @@ public class CompositepatternApplication implements CommandLineRunner {
          * 组合模式demo
          */
         //创建大学
-        OrganizationComponent university = new University("清华大学", " 中国顶级大学 ");
-        //创建学院
-        OrganizationComponent computerCollege = new College("计算机学院", " 计算机学院 ");
-        OrganizationComponent infoEngineercollege = new College("信息工程学院", " 信息工程学院 ");
+//        OrganizationComponent university = new University("清华大学", " 中国顶级大学 ");
+//        //创建学院
+//        OrganizationComponent computerCollege = new College("计算机学院", " 计算机学院 ");
+//        OrganizationComponent infoEngineercollege = new College("信息工程学院", " 信息工程学院 ");
+//
+//        //创建计算机学院下面的专业
+//        computerCollege.add(new Department("软件工程", " 软件工程不错 "));
+//        computerCollege.add(new Department("网络工程", " 网络工程不错 "));
+//        computerCollege.add(new Department("计算机科学与技术", " 计算机科学与技术是老牌的专业 "));
+//        //创建信息工程学院下面的专业
+//        infoEngineercollege.add(new Department("通信工程", " 通信工程不好学 "));
+//        infoEngineercollege.add(new Department("信息工程", " 信息工程好学 "));
+//
+//        //将学院加入到大学
+//        university.add(computerCollege);
+//        university.add(infoEngineercollege);
+//
+//        university.print();
 
-        //创建计算机学院下面的专业
-        computerCollege.add(new Department("软件工程", " 软件工程不错 "));
-        computerCollege.add(new Department("网络工程", " 网络工程不错 "));
-        computerCollege.add(new Department("计算机科学与技术", " 计算机科学与技术是老牌的专业 "));
-        //创建信息工程学院下面的专业
-        infoEngineercollege.add(new Department("通信工程", " 通信工程不好学 "));
-        infoEngineercollege.add(new Department("信息工程", " 信息工程好学 "));
-
-        //将学院加入到大学
-        university.add(computerCollege);
-        university.add(infoEngineercollege);
-
-        university.print();
+        BaseComponent root = new Menu(1, "门店业务", "mendian/index", "", "门店业务");
+        root.add(new Function(10, "账号管理", "zh/index", "", "账号管理"));
+        BaseComponent mendianGuanli = new Menu(20, "检测管理", "taochejian/index", "", "检测管理");
+        mendianGuanli.add(new Function(21, "外观检测", "wg/index", "", "外观检测"));
+        mendianGuanli.add(new Function(31, "内饰检测", "ns/index", "", "内饰检测"));
+        root.add(mendianGuanli);
+        root.add(new Function(40, "车源管理", "cy/index", "", "车源管理"));
+        root.showData(0);
     }
 
     private static void display(Component component) {
