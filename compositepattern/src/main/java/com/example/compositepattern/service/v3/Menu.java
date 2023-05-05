@@ -23,6 +23,7 @@ public class Menu extends BaseComponent {
 
     @Override
     public void show(Integer depth) {
+        //可以个性化自己的属性上来
         if (this.lstFunction.isEmpty()) {
             return;
         }
