@@ -1,5 +1,7 @@
 package com.example.compositepattern.service.v3;
 
+import java.util.Collections;
+
 public abstract class BaseComponent {
     public BaseComponent(Integer id, String name, String url, String icon, String tip) {
         this.id = id;
@@ -61,11 +63,14 @@ public abstract class BaseComponent {
     public abstract void remove(BaseComponent component);
 
     public void showData(Integer depth) {
-        for (int i = 0; i < depth; i++) {
-            System.out.print("-");
-        }
-        System.out.println(String.format("%s(%d,%s)", this.getName(), this.getId(), this.getUrl()));
+        this.preShow(depth);
         this.show(depth);
+    }
+
+    private void preShow(Integer depth) {
+        //重复字符>指定depth次
+        String prefix = String.join("", Collections.nCopies(depth, ">"));
+        System.out.println(String.format("%s%s(%d,%s)", prefix, this.getName(), this.getId(), this.getUrl()));
     }
 
     public abstract void show(Integer depth);
