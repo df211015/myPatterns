@@ -158,6 +158,7 @@ public class CompositepatternApplication implements CommandLineRunner {
         mendianGuanli.add(new Function(31, "内饰检测", "ns/index", "", "内饰检测"));
         root.add(mendianGuanli);
         root.add(new Function(40, "车源管理", "cy/index", "", "车源管理"));
+        //打印全部节点
         root.showData(0);
     }
 
