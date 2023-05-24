@@ -1,22 +1,19 @@
 package com.example.chainpattern;
 
-import com.example.chainpattern.service.customize.Handler;
-import com.example.chainpattern.service.customize.HandlerOfOne;
-import com.example.chainpattern.service.customize.HandlerOfThree;
-import com.example.chainpattern.service.customize.HandlerOfTwo;
-import com.example.chainpattern.service.dnsfirst.Recorder;
-import com.example.chainpattern.service.dnssecond.ChinaTopDnsServer;
-import com.example.chainpattern.service.dnssecond.DnsServer;
-import com.example.chainpattern.service.dnssecond.SHDnsServer;
-import com.example.chainpattern.service.dnssecond.TopDnsServer;
+import com.example.chainpattern.service.v1.*;
+import com.example.chainpattern.service.v3.ConcreteProcessor1;
+import com.example.chainpattern.service.v3.ConcreteProcessor2;
+import com.example.chainpattern.service.v3.ConcreteProcessor3;
+import com.example.chainpattern.service.v3.Processor;
 import org.springframework.boot.Banner;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
 
 @SpringBootApplication
 public class ChainpatternApplication implements CommandLineRunner {
@@ -31,22 +28,23 @@ public class ChainpatternApplication implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         System.out.println("模拟开始...");
-//		Random random = new Random();
-//		ArrayList<IWomen> arrayList = new ArrayList<>();
-//		for (int i = 0; i < 5; i++) {
-//			IWomen women = new Women(random.nextInt(3) + 1, "我要去逛街");
-//			arrayList.add(women);
-//			System.out.println(String.format("打印第%s条记录信息:%s", i, JSON.toJSONString(women)));
-//		}
+
+//        Random random = new Random();
+//        ArrayList<IWomen> arrayList = new ArrayList<>();
+//        for (int i = 0; i < 1; i++) {
+//            IWomen women = new Women(random.nextInt(3) + 1, "我要去逛街");
+//            arrayList.add(women);
+//            System.out.println(String.format("打印第%s条记录信息:%s", i, com.alibaba.fastjson.JSON.toJSONString(women)));
+//        }
 //
-//		Handler father = new Father();
-//		Handler husband = new Husband();
-//		Handler son = new Son();
-//		father.setNextHandler(husband);
-//		husband.setNextHandler(son);
-//		for (IWomen iWomen : arrayList) {
-//			father.HandleMessage(iWomen);
-//		}
+//        Handler father = new Father();
+//        Handler husband = new Husband();
+//        Handler son = new Son();
+//        father.setNextHandler(husband);
+//        husband.setNextHandler(son);
+//        for (IWomen iWomen : arrayList) {
+//            father.HandleMessage(iWomen);
+//        }
 
 //        System.out.println("模拟开始....");
 //        DnsParse dnsOfShanghai = new DnsOfShanghai();
@@ -120,11 +118,32 @@ public class ChainpatternApplication implements CommandLineRunner {
          * 职责链,仅对链上满足条件的第一个节点进行处理,后续节点即便满足也不会执行
          * 如果要全节点执行,可以选择状态模式
          */
-        Handler handlerOfOne = new HandlerOfOne();
-        Handler handlerOfTwo = new HandlerOfTwo();
-        Handler handlerOfThree = new HandlerOfThree();
-        handlerOfOne.setNextHandler(handlerOfTwo);
-        handlerOfTwo.setNextHandler(handlerOfThree);
-        handlerOfOne.process();
+//        Handler handlerOfOne = new HandlerOfOne();
+//        Handler handlerOfTwo = new HandlerOfTwo();
+//        Handler handlerOfThree = new HandlerOfThree();
+//        handlerOfOne.setNextHandler(handlerOfTwo);
+//        handlerOfTwo.setNextHandler(handlerOfThree);
+//        handlerOfOne.process();
+
+
+//        List<Processor> processors = new ArrayList<>();
+//        processors.add(new ConcreteProcessor1());
+//        processors.add(new ConcreteProcessor2());
+//        processors.add(new ConcreteProcessor3());
+//        // 设置每个处理器的后继处理器
+//        for (int i = 0; i < processors.size() - 1; i++) {
+//            processors.get(i).setSuccessor(processors.get(i+1));
+//        }
+
+        /**
+         * 职责链处理方式,把处理类下放到子类进行实现,依然没有解决调用递归的问题
+         */
+        Processor processor1 = new ConcreteProcessor1();
+        Processor processor2 = new ConcreteProcessor2();
+        Processor processor3 = new ConcreteProcessor3();
+        processor1.setSuccessor(processor2);
+        processor2.setSuccessor(processor3);
+        // 处理请求
+        Integer result = processor1.process(3);
     }
 }

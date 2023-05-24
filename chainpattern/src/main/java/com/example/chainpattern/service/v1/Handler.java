@@ -12,17 +12,17 @@ public abstract class Handler {
         this.nextHandler = nextHandler;
     }
 
-    public Handler(Integer level){
+    public Handler(Integer level) {
         this.level = level;
     }
 
     public final void HandleMessage(IWomen women) {
         if (women.getType().equals(this.level)) {
             this.response(women);
-        }else{
-            if(this.nextHandler != null){
+        } else {
+            if (this.nextHandler != null) {
                 this.nextHandler.HandleMessage(women);
-            }else{
+            } else {
                 System.out.println("---没地方请求了,按不同意处理---\n");
             }
         }
