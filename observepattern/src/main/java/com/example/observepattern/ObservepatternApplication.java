@@ -3,6 +3,9 @@ package com.example.observepattern;
 import com.example.observepattern.service.customize.MyObserver1;
 import com.example.observepattern.service.customize.MyObserver2;
 import com.example.observepattern.service.customize.MySubject;
+import com.example.observepattern.service.v1.ObjectFor3D;
+import com.example.observepattern.service.v1.Observer1;
+import com.example.observepattern.service.v1.Observer2;
 import org.springframework.boot.Banner;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -60,11 +63,19 @@ public class ObservepatternApplication implements CommandLineRunner {
         /**
          * 观察者模式
          */
-        Observer observer1 = new MyObserver1();
-        Observer observer2 = new MyObserver2();
-        MySubject subject = new MySubject();
-        subject.addObserver(observer1);
-        subject.addObserver(observer2);
-        subject.notifyObservers("hello");
+//        Observer observer1 = new MyObserver1();
+//        Observer observer2 = new MyObserver2();
+//        MySubject subject = new MySubject();
+//        subject.addObserver(observer1);
+//        subject.addObserver(observer2);
+//        subject.notifyObservers("hello");
+
+        /**
+         * 观察者模式
+         */
+        ObjectFor3D subjectFor3d = new ObjectFor3D();
+        Observer1 observer1 = new Observer1(subjectFor3d);
+        Observer2 observer2 = new Observer2(subjectFor3d);
+        subjectFor3d.setMsg("20140420的3D号码是:888");
     }
 }
