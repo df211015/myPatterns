@@ -5,9 +5,9 @@ public class SuperStar {
     private Integer age;
     private String favourite;
 
-    public SuperStar(MyBuilder myBuilder){
+    public SuperStar(MyBuilder myBuilder) {
         this.name = myBuilder.getName();
-        this.age  = myBuilder.getAge();
+        this.age = myBuilder.getAge();
         this.favourite = myBuilder.getFavourite();
     }
 }
