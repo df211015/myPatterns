@@ -1,8 +1,8 @@
 package com.example.flyweightpattern;
 
-import com.example.flyweightpattern.service.customize.UnsharedConcreteFlyweight;
-import com.example.flyweightpattern.service.customize.Flyweight;
-import com.example.flyweightpattern.service.customize.FlyweightFactory;
+import com.example.flyweightpattern.service.instance03.Captcha;
+import com.example.flyweightpattern.service.instance03.CaptchaArgs;
+import com.example.flyweightpattern.service.instance03.FlyweightFactory;
 import org.springframework.boot.Banner;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -35,15 +35,19 @@ public class FlyweightpatternApplication implements CommandLineRunner {
 //        f11.operation(new UnsharedConcreteFlyweight("第1次调用b"));
 //        f12.operation(new UnsharedConcreteFlyweight("第2次调用b"));
 
-//        FlyweightFactory flyweightFactory = new FlyweightFactory();
-//        //获取一个正常验证码
-//        Captcha captcha = flyweightFactory.getCaptcha(0);
-//        // 生成一个长宽为120且简单的正常验证码
-//        captcha.product(new CaptchaArgs(120,120,"简单"));
-//        //获取一个计算型验证码
-//        captcha = flyweightFactory.getCaptcha(1);
-//        // 生成一个长宽为200且复杂的计算型验证码
-//        captcha.product(new CaptchaArgs(200,200,"复杂"));
+        /**
+         * 该示例将验证码类型定义为外部状态key(享元),将验证码的长,度及难易度定义为内部状态且不可共享对像
+         * 按结构类型的思路实现这个场景
+         */
+        FlyweightFactory flyweightFactory = new FlyweightFactory();
+        //获取一个正常验证码
+        Captcha captcha = flyweightFactory.getCaptcha(0);
+        // 生成一个长宽为120且简单的正常验证码
+        captcha.product(new CaptchaArgs(120, 120, "简单"));
+        //获取一个计算型验证码
+        captcha = flyweightFactory.getCaptcha(1);
+        // 生成一个长宽为200且复杂的计算型验证码
+        captcha.product(new CaptchaArgs(200, 200, "复杂"));
         /**
          * 根据外部状态获取享元对像,示例聚集享元的处理,享元模式demo
          */
@@ -54,12 +58,12 @@ public class FlyweightpatternApplication implements CommandLineRunner {
          * 享元模式demo,该示例讲清楚了享元与非享元的关系
          * 该模式主要解决大对像的问题,将可以外部化的对像设计成共享方式,可以优化内存的占有率
          */
-        FlyweightFactory factory = new FlyweightFactory();
-        Flyweight f01 = factory.getFlyweight("a");
-        Flyweight f02 = factory.getFlyweight("a");
-        Flyweight f03 = factory.getFlyweight("a");
-        f01.operation(new UnsharedConcreteFlyweight("第1次调用a."));
-        f02.operation(new UnsharedConcreteFlyweight("第2次调用a."));
-        f03.operation(new UnsharedConcreteFlyweight("第3次调用a."));
+//        FlyweightFactory factory = new FlyweightFactory();
+//        Flyweight f01 = factory.getFlyweight("a");
+//        Flyweight f02 = factory.getFlyweight("a");
+//        Flyweight f03 = factory.getFlyweight("a");
+//        f01.operation(new UnsharedConcreteFlyweight("第1次调用a."));
+//        f02.operation(new UnsharedConcreteFlyweight("第2次调用a."));
+//        f03.operation(new UnsharedConcreteFlyweight("第3次调用a."));
     }
 }

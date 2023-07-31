@@ -8,6 +8,6 @@ public class ComputeCaptcha implements Captcha {
     @Override
     public void product(CaptchaArgs captchaArgs) {
         System.out.println("生成了一个宽度：" + captchaArgs.getWidth() + "，" +
-                "高度：" + captchaArgs.getHeight() + "复杂度:" + captchaArgs.getComplexity() + "的计算型验证码。");
+                "高度：" + captchaArgs.getHeight() + ",复杂度:" + captchaArgs.getComplexity() + "的计算型验证码。");
     }
 }
