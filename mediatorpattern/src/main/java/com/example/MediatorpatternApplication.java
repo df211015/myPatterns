@@ -1,12 +1,6 @@
 package com.example;
 
-import com.example.domain.ERentType;
-import com.example.service.customize.AbsMediator;
-import com.example.service.customize.ColleagueOfLandlady;
-import com.example.service.customize.ColleagueOfTenant;
-import com.example.service.customize.NormalMediator;
-import com.example.service.pk3.*;
-import com.example.service.simple.*;
+import com.example.service.pk0.*;
 import org.springframework.boot.Banner;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -24,16 +18,21 @@ public class MediatorpatternApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-//        AbstractMediator mediator = new Mediator();
-//        System.out.println("---采购人员采购电脑---");
-//        Purchase purchase = new Purchase(mediator);
-//        purchase.buyIBMcomputer(100);
-//        System.out.println("---销售人员销售电脑---");
-//        Sale sale = new Sale(mediator);
-//        sale.sellIBMComputer(1);
-//        System.out.println("---库房管理人员清库处理---");
-//        Stock stock = new Stock(mediator);
-//        stock.clearStock();
+        /**
+         * 中介模式将图状的调用转变为一个星型状,
+         * 需要注意的是在中介者抽象类中,同事类在其中是具体类而不是抽象类,这样便于中介者最大限度的利用同事类的公开方法,如果统一按抽象
+         * 同事类定义,则会让抽象同事类的方法变得臃肿且不通用
+         */
+        AbstractMediator mediator = new Mediator();
+        System.out.println("---采购人员采购电脑---");
+        Purchase purchase = new Purchase(mediator);
+        purchase.buyIBMcomputer(100);
+        System.out.println("---销售人员销售电脑---");
+        Sale sale = new Sale(mediator);
+        sale.sellIBMComputer(1);
+        System.out.println("---库房管理人员清库处理---");
+        Stock stock = new Stock(mediator);
+        stock.clearStock();
 
 //        Mediator md = new ConcreteMediator();
 //        Colleague c1 = new ConcreteColleague1();
@@ -77,11 +76,11 @@ public class MediatorpatternApplication implements CommandLineRunner {
         /**
          * 中介者模式demo
          */
-        AbsMediator mediator = new NormalMediator();
-        ColleagueOfLandlady landlady = new ColleagueOfLandlady(mediator);
-        ColleagueOfTenant tenant = new ColleagueOfTenant(mediator);
-        mediator.setLandlady(landlady);
-        mediator.setTenant(tenant);
-        tenant.rent();
+//        AbsMediator mediator = new NormalMediator();
+//        ColleagueOfLandlady landlady = new ColleagueOfLandlady(mediator);
+//        ColleagueOfTenant tenant = new ColleagueOfTenant(mediator);
+//        mediator.setLandlady(landlady);
+//        mediator.setTenant(tenant);
+//        tenant.rent();
     }
 }
