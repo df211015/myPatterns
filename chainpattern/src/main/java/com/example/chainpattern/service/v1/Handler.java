@@ -20,7 +20,7 @@ public abstract class Handler {
         if (women.getType().equals(this.level)) {
             this.response(women);
         } else {
-            if (this.nextHandler != null) {
+            if (null != this.nextHandler) {
                 this.nextHandler.HandleMessage(women);
             } else {
                 System.out.println("---没地方请求了,按不同意处理---\n");
