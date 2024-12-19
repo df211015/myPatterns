@@ -4,6 +4,10 @@ import com.example.interpreter.service.customize.AndExpression;
 import com.example.interpreter.service.customize.Expression;
 import com.example.interpreter.service.customize.OrExpression;
 import com.example.interpreter.service.customize.TerminalExpression;
+import com.example.interpreter.service.customize02.ERejectRetailStandardReason;
+import com.example.interpreter.service.customize02.RetailStandardCheckFactory;
+import com.example.interpreter.service.customize03.Free;
+import com.example.interpreter.service.customize03.Passenger;
 import com.example.interpreter.service.simple.Calculator;
 import com.example.interpreter.service.v1.CalculatorPlus;
 import org.apache.commons.lang.StringUtils;
@@ -14,7 +18,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
 @SpringBootApplication
 public class InterpreterApplication implements CommandLineRunner {
@@ -42,10 +48,26 @@ public class InterpreterApplication implements CommandLineRunner {
         /**
          * 通过设置不同的规则,应用时解析相应的规则
          */
-        Expression goodStudent = getMGoodStudentExpression();
-        Expression hobby = getHobbyExpression();
-        System.out.println("zhangshan是个三好学生么? " + goodStudent.interpret("zhangshan"));
-        System.out.println("wangwu like music? " + hobby.interpret("wangwu hate music"));
+//        Expression goodStudent = getMGoodStudentExpression();
+//        Expression hobby = getHobbyExpression();
+//        System.out.println("zhangshan是个三好学生么? " + goodStudent.interpret("zhangshan"));
+//        System.out.println("wangwu like music? " + hobby.interpret("wangwu hate music"));
+        //List<ERejectRetailStandardReason> retailStandardType = RetailStandardCheckFactory.getRetailStandardType("1000", "D柱变形");
+
+        Free free = new Free(65, 120.0);
+        List<Passenger> passengers = new ArrayList<>();
+        Passenger passenger1 = Passenger.builder().name("aaa").age(70).height(150.0).build();
+        Passenger passenger2 = Passenger.builder().name("bbb").age(50).height(150.0).build();
+        Passenger passenger3 = Passenger.builder().name("ccc").age(30).height(110.0).build();
+        passengers.add(passenger1);
+        passengers.add(passenger2);
+        passengers.add(passenger3);
+        passengers.forEach(r -> {
+            Boolean result = free.result(r.getAge(), r.getHeight());
+            System.out.println(String.format("用户:%s,%s", r.getName(), result ? "免费" : "请刷卡"));
+        });
+
+        String str = "";
     }
 
     //规则1：zhangshan 和 lisi 都是三好学生

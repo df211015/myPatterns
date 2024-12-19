@@ -36,7 +36,7 @@ public class FlyweightpatternApplication implements CommandLineRunner {
 //        f12.operation(new UnsharedConcreteFlyweight("第2次调用b"));
 
         /**
-         * 该示例将验证码类型定义为外部状态key(享元),将验证码的长,度及难易度定义为内部状态且不可共享对像
+         * 该示例将验证码类型定义为外部状态key(享元),将验证码的长度及难易度定义为内部状态且不可共享对像
          * 按结构类型的思路实现这个场景
          */
         FlyweightFactory flyweightFactory = new FlyweightFactory();

@@ -12,6 +12,7 @@ public class TerminalExpression implements Expression {
         if (context.contains(data)) {
             return true;
         }
+
         return false;
     }
 }
